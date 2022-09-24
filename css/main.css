@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap');
+
+:root {
+  --main: #0b0d17;
+  --alt: #d0d6f9;
+  --white: #ffffff;
+}
+
+body {
+  background-color: var(--main);
+  background-image: url(../assets/home/background-home-mobile.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: "Barlow", sans-serif;
+  color: var(--alt);
+}
+
+.destination-body {
+  background-image: url(../assets/destination/background-destination-mobile.jpg);
+  background-size: cover;
+}
+
+h1, h2, h3, h4, .subheading-1 {
+  font-family: "Bellefair", sans-serif;
+}
+
+.offcanvas--navbar {
+  display: block;
+}
+
+.horizontal--navbar {
+  display: none;
+}
+
+.navbar {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 16px;
+  letter-spacing: 2.7px;
+  text-transform: uppercase;
+  margin: auto -0.75rem;
+}
+
+.nav-item {
+  box-sizing: content-box;
+  margin-bottom: 10px;
+  padding-bottom: 1px;
+}
+
+.nav-link {
+  width: fit-content;
+  color: #fff;
+}
+
+.nav-link:hover {
+  color: #fff;
+}
+
+.nav-link:focus {
+  color: #fff;
+}
+
+.nav-link.active {
+  color: #fff !important;
+  border-bottom: 1px solid var(--white);
+}
+
+.offcanvas {
+  background-color: rgba(105, 105, 105, 0.1);
+  backdrop-filter: blur(80px);
+}
+
+.offcanvas-backdrop {
+  background-color: transparent;
+}
+
+.close-btn {
+  background-color: transparent;
+  border: none;
+}
+
+.navbar-brand .logo{
+  width: 40px;
+  height: 40px;
+}
+
+h5 {
+  font-family: "Barlow Condensed";
+  font-size: 1rem;
+  letter-spacing: 2.7px;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 5rem;
+  padding: 10px ;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+.main-p {
+  font-size: 15px;
+  font-family: "Barlow";
+  margin: auto 25px;
+  text-align: center;
+}
+
+.explore-ctr {
+  min-height: 220px;
+}
+
+.explore__btn {
+  font-family: "Bellefair";
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1.25px;
+  text-decoration: none;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+ 
+
+  background-color: var(--white);
+  border: none;
+  border-radius: 50%;
+  outline: 0px solid #4d4d4dcc;
+  transition: all .2s;
+}
+
+.explore__btn:hover {
+  outline-width: 50px;
+  transition: outline .2s;
+}
+
+.explore__btn-text  {
+  color: var(--main);
+}
+
+
+/* DESTINATION STYLES */
+
+.destination-h5 { 
+  font-size: 1rem;
+  color: var(--white);
+}
+
+.destination-h5 span {
+  opacity: .25;
+}
+
+.planet-container {
+  width: 10.625rem;
+  height: 10.625rem;
+  margin: 35px auto 15px;
+}
+
+.planet-container img {
+  width: 100%; 
+}
+
+.nav {
+  font-family: "Barlow Condensed";
+  font-size: 14px;
+  letter-spacing: 2.36px;
+  text-transform: uppercase;
+}
+
+.nav .nav-link {
+  color: var(--alt);
+}
+
+.nav .nav-link.active {
+  color: var(--white);
+}
+
+h2 {
+  font-size: 3.5rem;
+  color: var(--white);
+}
+
+.description p {
+  font-family: "Barlow", sans-serif;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.line {
+  width: 85%;
+  height: 2px;
+  background-color: #383B4B;
+}
+
+.distance sub, .time sub {
+  display: block;
+  padding-bottom: 26px;
+}
+
+.subheading-2 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 14px;
+  letter-spacing: 2.36px;
+  text-transform: uppercase;
+}
+
+.subheading-1 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: var(--white);
+} 
+
+@media (min-width: 768px) {
+  body {
+    background-image: url(../assets/home/background-home-tablet.jpg);
+    background-position: center;
+  }
+
+  .offcanvas--navbar {
+    display: none !important;
+  }
+
+  .horizontal--navbar {
+    display: block;
+    padding-top: 0;
+  }
+
+  .horizontal--navbar .nav {
+    align-self: flex-start;
+    background-color: rgba(105, 105, 105, 0.1);
+    backdrop-filter: blur(0px);
+  } 
+
+  .horizontal--navbar .nav-link {
+    font-size: 0.875rem;
+    color: var(--white);
+    padding: 25px 25px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 1200px) {
+  body {
+    background-image: url(../assets/home/background-home-desktop.jpg);
+  }
+}
