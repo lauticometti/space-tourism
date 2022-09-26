@@ -26,10 +26,6 @@ h1, h2, h3, h4, .subheading-1 {
   font-family: "Bellefair", sans-serif;
 }
 
-header {
-  height: 100vh;
-}
-
 .container-fluid {
   padding-right: 0;
 }
@@ -170,11 +166,11 @@ h1 {
 
 .destination-h5 span {
   opacity: .25;
+  padding-right: .5rem;
 }
 
 .planet-container {
   width: 10.625rem;
-  height: 10.625rem;
   margin: 35px auto 15px;
 }
 
@@ -187,6 +183,7 @@ h1 {
   font-size: 14px;
   letter-spacing: 2.36px;
   text-transform: uppercase;
+  gap: 25px;
 }
 
 .nav .nav-link {
@@ -197,26 +194,49 @@ h1 {
   color: var(--white);
 }
 
-h2 {
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.description h2 {
   font-size: 3.5rem;
+  margin-top: 1.5rem;
   color: var(--white);
 }
 
 .description p {
   font-family: "Barlow", sans-serif;
   font-size: 15px;
+  text-align: center;
   line-height: 25px;
+  margin: auto 3rem;
 }
 
 .line {
   width: 85%;
   height: 2px;
+  margin: 1.5rem auto;
   background-color: #383B4B;
+}
+
+.features {
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 2.5rem;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  gap: 2rem;
+
+  text-align: center;
 }
 
 .distance sub, .time sub {
   display: block;
-  padding-bottom: 26px;
+  padding-bottom: 20px;
 }
 
 .subheading-2 {
@@ -274,19 +294,22 @@ h2 {
     display: block;
     width: 100%;
     padding: 2.1rem 0 !important;
-    border-bottom: 1px solid transparent ;
   }
-
-  .navbar-nav .nav-link.active {
-    border-bottom: 1px solid var(--white) ;
+  
+  .nav-link {
+    border-bottom: 2px solid transparent;
+  }
+  
+  .nav-link.active {
+    border-bottom: 2px solid var(--white) ;
   }
   
   .navbar-nav .nav-link span {
     display: none;
   }
 
-  .navbar-nav .nav-link:hover {
-    border-bottom: 1px rgba(255, 255, 255, 0.5)  solid;
+  .nav-link:hover {
+    border-bottom: 2px rgba(255, 255, 255, 0.5)  solid;
   }
   
   h5 {
@@ -316,12 +339,56 @@ h2 {
     letter-spacing: 2px;
   }
 
+
+  /* DESTINATION TABLET */
+
+  .destination-body {
+    background-image: url(../assets/destination/background-destination-tablet.jpg);
+  }
+
+  .destination-h5 {
+    text-align: start;
+    padding-left: 40px;
+  }
+
+  .planet-container {
+    width: 18.75rem;
+    margin: 50px auto 35px;
+  }
+
+  .description h2 {
+    margin-top: 1.5rem;
+    font-size: 5rem;
+    text-align: center;
+  }
+
+  .description p {
+    font-size: 1rem;
+    text-align: center;
+    margin: auto 4.5rem;
+  }
+
+  .features {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .description p {
+    margin: auto 25%;
+  }
 }
 
 
 @media (min-width: 1200px) {
   body {
     background-image: url(../assets/home/background-home-desktop.jpg);
+  }
+
+  .destination-body {
+    background-image: url(../assets/destination/background-destination-desktop.jpg);
   }
 
   .navbar .container-fluid {
@@ -354,4 +421,66 @@ h2 {
     display: inline;
   }
 
+
+
+  /* DESTINATION DESKTOP */
+
+  .destination-h5 {
+    font-size: 1.75rem;
+    letter-spacing: 4.72px;
+    padding-left: 10rem;
+    margin: 5rem 0 4rem;
+  }
+  
+  .destination-h5 span {
+    padding-right: 1.5rem;
+  }
+
+  .destination-main {
+    margin: auto 0;
+  }
+
+  .planet-container {
+    width: 27.8125rem;
+  }
+
+  .description {
+    align-items: flex-start;
+    margin: 0;
+    padding: 0;
+    padding-right: 8rem ;
+  }
+
+  .description .nav-link {
+    font-size: 1rem;
+    letter-spacing: 2.7px;
+    padding-bottom: 8px;
+  }
+
+  .description h2 {
+    font-size: 6.25rem;
+    margin: 2rem 0 1.5rem;
+  }
+
+  .description p {
+    font-size: 1.125rem;
+    line-height: 32px;
+    text-align: justify;
+    margin: 0 1rem 0 0;
+  }
+
+  .description .line {
+    width: 100%;
+    margin: 4rem 0 1rem;
+  }
+
+  .features {
+    justify-content: flex-start;
+    gap: 5rem;
+    text-align: start;
+  }
+
+  .subheading-1 {
+    font-size: 1.75rem;
+  }
 }
