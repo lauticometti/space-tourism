@@ -54,10 +54,27 @@ h1, h2, h3, h4, .subheading-1 {
 }
 
 .navbar-brand {
+  display: block;
   margin: 0;
   padding: 0;
   align-self: center;
+  animation: rotating 2s linear infinite both;
 }
+
+@keyframes rotating{
+  0%{
+    transform:rotate(0deg)
+              translate(5px)
+              rotate(0deg);              
+  }
+
+  100%{
+    transform:rotate(360deg)
+              translate(5px)
+              rotate(-360deg);
+  }
+}
+
 
 .navbar-brand .logo{
   width: 40px;
@@ -125,6 +142,7 @@ h1 {
 
 .explore-ctr {
   min-height: 220px;
+  position: relative;
 }
 
 .explore__btn {
@@ -251,6 +269,70 @@ h1 {
   text-transform: uppercase;
   color: var(--white);
 } 
+
+
+/* CREW STYLES */
+
+.crew-body {
+  background-image: url(../assets/crew/background-crew-mobile.jpg);
+}
+
+.crew-body .navbar {
+  margin-bottom: 10px;
+}
+
+.crew-container {
+  width: 327px;
+  height: 223px;
+  margin: 25px auto 0;
+}
+
+.crew-container img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+.crew-line {
+  margin: 0 auto 30px;
+}
+
+.description-crew .nav {
+  gap: 1rem;
+}
+
+.description-crew .nav-link.active {
+  border: none;
+}
+
+.oval {
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--white);
+  opacity: 20%;
+}
+
+.description-crew .nav-link.active > .oval {
+  opacity: 100%;
+}
+
+
+.description-crew h4 {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: var(--white);
+  opacity: 50%;
+  margin: 30px auto .5rem;
+}
+
+.description-crew h3 {
+  font-size: 24px;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
 
 @media (min-width: 576px) {
   body {
