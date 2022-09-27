@@ -281,28 +281,54 @@ h1 {
   margin-bottom: 10px;
 }
 
-.crew-container {
+.photo-container {
+  position: relative;
   width: 327px;
   height: 223px;
   margin: 25px auto 0;
 }
 
-.crew-container img {
+.photo-container img {
   object-fit: contain;
   width: 100%;
   height: 100%;
 }
 
-.crew-line {
-  margin: 0 auto 30px;
+.photo-container::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+  width: 85%;
+  height: 2px;
+  background-color: #383B4B;
 }
 
-.description-crew .nav {
-  gap: 1rem;
+.description-crew h4 {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: var(--white);
+  opacity: 50%;
+  margin: 40px auto .5rem;
 }
 
-.description-crew .nav-link.active {
-  border: none;
+.description-crew h3 {
+  font-size: 24px;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+
+/* WORKING ON CREW SLIDER */
+
+.slider-pointers {
+  display: flex;
+  gap: 15px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 1.5rem);
 }
 
 .oval {
@@ -314,24 +340,38 @@ h1 {
   opacity: 20%;
 }
 
-.description-crew .nav-link.active > .oval {
+.oval-1 {
   opacity: 100%;
 }
 
-
-.description-crew h4 {
-  font-size: 16px;
-  text-transform: uppercase;
-  color: var(--white);
-  opacity: 50%;
-  margin: 30px auto .5rem;
+.crew-main {
+  position: relative;
 }
 
-.description-crew h3 {
-  font-size: 24px;
-  text-transform: uppercase;
-  color: var(--white);
+.crew-1 {
+  position: absolute;
+  left: 0px;
 }
+
+.crew-2 {
+  display: none;
+  position: absolute;
+  left: 100%;
+}
+
+.crew-3 {
+  display: none;
+  position: absolute;
+  left: 200%;
+}
+
+.crew-4 {
+  display: none;
+  position: absolute;
+  left: 300%;
+}
+
+
 
 
 @media (min-width: 576px) {
