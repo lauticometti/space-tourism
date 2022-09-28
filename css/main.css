@@ -297,7 +297,7 @@ h1 {
 .photo-container::after {
   content: "";
   position: absolute;
-  bottom: 0;
+  bottom: -2px;
   left: 50%;
   transform: translate(-50%);
   width: 85%;
@@ -310,7 +310,7 @@ h1 {
   text-transform: uppercase;
   color: var(--white);
   opacity: 50%;
-  margin: 40px auto .5rem;
+  margin: 45px auto .5rem;
 }
 
 .description-crew h3 {
@@ -322,56 +322,120 @@ h1 {
 
 /* WORKING ON CREW SLIDER */
 
-.slider-pointers {
-  display: flex;
-  gap: 15px;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, 1.5rem);
-}
-
-.oval {
-  display: block;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: var(--white);
-  opacity: 20%;
-}
-
-.oval-1 {
-  opacity: 100%;
-}
-
 .crew-main {
   position: relative;
 }
 
-.crew-1 {
+.oval {
   position: absolute;
-  left: 0px;
+  top: 50%;
+  left: 50%;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: var(--white);
+  opacity: 20%;
+  -webkit-appearance: none;
+  appearance: none;
+  transition: .5s;
+  z-index: 10;
 }
 
-.crew-2 {
+.oval:checked {
+  opacity: 100%;
+}
+
+.check-oval-1 {
+  transform: translate(-3.3rem, 20px);
+}
+
+.check-oval-2 {
+  transform: translate(-1.1rem, 20px);
+}
+
+.check-oval-3 {
+  transform: translate(1.1rem, 20px);
+}
+
+.check-oval-4 {
+  transform: translate(3.3rem, 20px);
+}
+
+
+/* FIRST CHECKED */
+
+.check-oval-1:checked ~ #crew-1 {
+  display: block;
+}
+
+.check-oval-1:checked ~ #crew-2 {
   display: none;
-  position: absolute;
-  left: 100%;
 }
 
-.crew-3 {
+.check-oval-1:checked ~ #crew-3 {
   display: none;
-  position: absolute;
-  left: 200%;
 }
 
-.crew-4 {
+.check-oval-1:checked ~ #crew-4 {
   display: none;
-  position: absolute;
-  left: 300%;
+} 
+
+
+/* SECOND CHECK */
+
+.check-oval-2:checked ~ #crew-1 {
+  display: none;
 }
 
+.check-oval-2:checked ~ #crew-2 {
+  display: block;
+}
 
+.check-oval-2:checked ~ #crew-3 {
+  display: none;
+}
+
+.check-oval-2:checked ~ #crew-4 {
+  display: none;
+} 
+
+
+/* THIRD CHECK */
+
+.check-oval-3:checked ~ #crew-1 {
+  display: none;
+}
+
+.check-oval-3:checked ~ #crew-2 {
+  display: none;
+}
+
+.check-oval-3:checked ~ #crew-3 {
+  display: block;
+}
+
+.check-oval-3:checked ~ #crew-4 {
+  display: none;
+} 
+
+
+/* FOURTH CHECK */
+
+.check-oval-4:checked ~ #crew-1 {
+  display: none;
+}
+
+.check-oval-4:checked ~ #crew-2 {
+  display: none;
+}
+
+.check-oval-4:checked ~ #crew-3 {
+  display: none;
+}
+
+.check-oval-4:checked ~ #crew-4 {
+  display: block;
+} 
 
 
 @media (min-width: 576px) {
