@@ -326,6 +326,10 @@ h1 {
   position: relative;
 }
 
+.crew-section {
+  height: 482px;
+}
+
 .oval {
   position: absolute;
   top: 50%;
