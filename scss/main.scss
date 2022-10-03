@@ -1,0 +1,895 @@
+ @import url('https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap');
+
+:root {
+  --main: #0b0d17;
+  --alt: #d0d6f9;
+  --white: #ffffff;
+  --template-glass-1: rgba(70, 70, 70, 0.2);
+  --white-05: rgba(255, 255, 255, 0.5)
+}
+
+body {
+  background-color: var(--main);
+  background-image: url(../assets/home/background-home-mobile.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: "Barlow", sans-serif;
+  color: var(--alt);
+}
+
+.destination-body {
+  background-image: url(../assets/destination/background-destination-mobile.jpg);
+  background-size: cover;
+}
+
+h1 {
+  font-family: "Bellefair", sans-serif;
+  font-size: 5rem;
+  padding: 10px;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+h2, h3, h4, .subheading-1 {
+  font-family: "Bellefair", sans-serif;
+}
+
+h5 {
+  font-family: "Barlow Condensed";
+  font-size: 1rem;
+  letter-spacing: 2.7px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.container-fluid {
+  padding-right: 0;
+}
+
+.row {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.navbar {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 16px;
+  letter-spacing: 2.7px;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  padding: 20px 10px;
+  &-brand {
+    display: block;
+    margin: 0;
+    padding: 0;
+    align-self: center;
+    animation: rotating 2s linear infinite both;
+    .logo{
+      width: 40px;
+      height: 40px;
+    }
+  }
+  .offcanvas {
+    background-color: rgba(105, 105, 105, 0.1);
+    backdrop-filter: blur(80px);
+    width: 55% !important;
+    &-header {
+      margin: .5rem;
+      .close-btn {
+        background-color: transparent;
+        border: none;
+        margin-right: .8rem;
+      }
+    }
+    &-backdrop {
+      background-color: transparent;
+    }
+  }
+}
+
+@keyframes rotating{
+  0%{
+    transform:rotate(0deg)
+              translate(5px)
+              rotate(0deg);              
+  }
+
+  100%{
+    transform:rotate(360deg)
+              translate(5px)
+              rotate(-360deg);
+  }
+}
+
+.nav-item {
+  margin: 0 0 20px 20px;
+}
+
+.nav-link {
+  padding: 0;
+  color: #fff;
+  width: fit-content;
+  &.active {
+    color: #fff !important;
+    border-bottom: 1px solid var(--white);
+  }
+  &:hover {
+    color: #fff;
+  }
+  &:focus {
+    color: var(--alt);
+  }
+  span {
+    font-weight: bold;
+    padding-right: .5rem;
+  }
+}
+
+.title-container {
+  margin: 0 auto 25px;
+  width: 75%;
+}
+
+.main-p {
+  font-size: 15px;
+  font-family: "Barlow";
+  text-align: center;
+}
+
+.explore__ctr {
+  min-height: 220px;
+  position: relative;
+  &-btn {
+    font-family: "Bellefair";
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1.25px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+   
+    background-color: var(--white);
+    border: none;
+    border-radius: 50%;
+    outline: 0px solid #4d4d4dcc;
+    transition: all .2s;
+    &:hover {
+      outline-width: 50px;
+      transition: outline .2s;
+    }
+    &-text  {
+      color: var(--main);
+    }
+  }
+}
+
+/* DESTINATION STYLES */
+
+.step-name { 
+  font-size: 1rem;
+  color: var(--white);
+  span {
+    opacity: .25;
+    padding-right: .5rem;
+  }
+}
+
+.planet-container {
+  width: 10.625rem;
+  margin: 35px auto 15px;
+  img {
+    width: 100%; 
+  }
+}
+
+.nav {
+  font-family: "Barlow Condensed";
+  font-size: 14px;
+  letter-spacing: 2.36px;
+  text-transform: uppercase;
+  gap: 25px;
+  &-link {
+    color: var(--alt);
+    &.active {
+      color: var(--white);
+    }
+  }
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h2 {
+    font-size: 3.5rem;
+    margin-top: 1.5rem;
+    color: var(--white);
+  }
+  p {
+    font-family: "Barlow", sans-serif;
+    font-size: 15px;
+    text-align: center;
+    line-height: 25px;
+    margin: auto 3rem;
+  }
+}
+
+.line {
+  width: 85%;
+  height: 2px;
+  margin: 1.5rem auto;
+  background-color: #383B4B;
+}
+
+.features {
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 2.5rem;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  gap: 2rem;
+
+  text-align: center;
+}
+
+sub {
+  display: block;
+  padding-bottom: 20px;
+}
+
+.subheading-2 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 14px;
+  letter-spacing: 2.36px;
+  text-transform: uppercase;
+}
+
+.subheading-1 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: var(--white);
+} 
+
+
+
+/* CREW STYLES */
+
+.crew-body {
+  background-image: url(../assets/crew/background-crew-mobile.jpg);
+}
+
+.crew-main {
+  position: relative;
+}
+
+.crew-section {
+  height: 482px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  .photo-container {
+    position: relative;
+    width: 327px;
+    height: 223px;
+    margin: 8px auto 0;
+    img {
+      object-fit: contain;
+      width: 100%;
+      height: 100%;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -2px;
+      left: 50%;
+      transform: translate(-50%);
+      width: 85%;
+      height: 2px;
+      background-color: #383B4B;
+    }
+  }
+  .description{
+    h4 {
+      font-size: 16px;
+      text-transform: uppercase;
+      color: var(--white);
+      opacity: 50%;
+      margin: 50px auto .5rem;
+    }
+    h3 {
+      font-size: 24px;
+      text-transform: uppercase;
+      color: var(--white);
+    }
+  }
+}
+
+  /* WORKING ON CREW SLIDER */
+
+
+.oval {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: var(--white);
+  opacity: 20%;
+  -webkit-appearance: none;
+  appearance: none;
+  transition: .5s;
+  z-index: 10;
+  &:checked {
+    opacity: 100%;
+  }
+}
+
+.check-oval {
+  &-1 {transform: translate(-330%, 20px);}
+  &-2 {transform: translate(-130%, 20px);}
+  &-3 {transform: translate(70%, 20px);}
+  &-4 {transform: translate(270%, 20px);}
+}
+
+   /* --- FIRST CHECKED --- */
+
+.check-oval-1:checked ~ #crew {
+  &-1 {display: flex;}
+  &-2 {display: none;}
+  &-3 {display: none;}
+  &-4 {display: none;}
+}
+ 
+   /* --- SECOND CHECK --- */
+
+.check-oval-2:checked ~ #crew {
+  &-1 {display: none;}
+  &-2 {display: flex;}
+  &-3 {display: none;}
+  &-4 {display: none;}
+}
+
+   /* --- THIRD CHECK --- */
+
+.check-oval-3:checked ~ #crew {
+  &-1 {display: none;}
+  &-2 {display: none;}
+  &-3 {display: flex;}
+  &-4 {display: none;}
+} 
+
+   /* --- FOURTH CHECK --- */
+
+.check-oval-4:checked ~ #crew {
+  &-1 {display: none;}
+  &-2 {display: none;}
+  &-3 {display: none;}
+  &-4 {display: flex;}
+} 
+
+
+/* TECH STYLES */
+
+.tech-body {
+  background-image: url(../assets/technology/background-technology-mobile.jpg);
+}
+
+.tech__main-container {
+  display: flex;
+  flex-direction: column;
+  picture {
+    source {
+      display: block;
+    }
+    img {
+      width: 100%; 
+    }
+  }
+}
+
+.step-name--tech {
+  margin-bottom: 35px;
+}
+
+.tech__buttons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 40px auto;
+  font-family: "Bellefair", sans-serif;
+  &-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--white-05);
+    border-radius: 50%;
+  
+    font-style: normal;
+    font-size: 1rem;
+    transition: .2s;
+    &:hover {
+      border-color: var(--white);
+      color: var(--white);
+    }
+    &.active {
+      color: var(--main);
+      background-color: var(--white);
+    }
+  }
+}
+
+.description-tech {
+  .subheading-2 {
+    bottom: 0;
+  }
+  h3 {
+    text-transform: uppercase;
+  }
+  p {
+    padding-bottom: 3rem;
+  }
+}
+
+
+/* START MEDIA QUERIES */
+
+
+@media (min-width: 576px) {
+  body {
+    background-image: url(../assets/home/background-home-tablet.jpg);
+    background-position: center;
+  }
+
+  h5 {
+    font-size: 1.25rem;
+    letter-spacing: 3.38px;
+  }
+
+  h1 {
+    font-size: 9.375rem;
+  }
+
+  .navbar {
+    padding: 0;
+    .container-fluid {
+      align-items: flex-start;
+      padding-left: 45px;
+    }
+    &-brand {
+    display: block;
+    .logo {
+      width: 48px;
+      height: 48px;
+    }
+    }
+    .offcanvas {
+      backdrop-filter: none;
+    }
+    &-nav {
+      background-color: var(--template-glass-1);
+      backdrop-filter: blur(2px);
+      padding: 0 1.5rem;
+      .nav-item {
+        margin: auto 1rem;
+      }
+      .nav-link {
+        display: block;
+        width: 100%;
+        padding: 2.1rem 0 !important;
+        span {
+          display: none;
+        }
+      }
+    }
+    
+  }
+  
+  .nav-link {
+    border-bottom: 3px solid transparent;
+    &.active {
+      border-bottom: 3px solid var(--white) ;
+    }
+    &:hover {
+      border-bottom: 3px rgba(255, 255, 255, 0.5)  solid;
+    }
+  }
+
+  .main-p {
+    font-size: 1rem;
+    line-height: 28px;
+    margin: auto 15%;
+  }
+
+  .explore__ctr {
+    min-height: 20rem;
+    &-btn {
+      width: 242px;
+      height: 242px;
+      font-size: 32px;
+      letter-spacing: 2px;
+    }
+  }
+
+
+  /* DESTINATION TABLET */
+
+  .destination-body {
+    background-image: url(../assets/destination/background-destination-tablet.jpg);
+  }
+
+  .step-name {
+    text-align: start;
+    padding-left: 40px;
+  }
+
+  .planet-container {
+    width: 18.75rem;
+    margin: 50px auto 35px;
+  }
+
+  .description {
+    h2 {
+      margin-top: 1.5rem;
+      font-size: 5rem;
+      text-align: center;
+    }
+    p {
+      font-size: 1rem;
+      text-align: center;
+      margin: auto 4.5rem;
+      line-height: 28px;
+    }
+    .features {
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+  }
+
+  /* CREW TABLET */
+
+  .crew-body {
+    background-image: url(../assets/crew/background-crew-tablet.jpg);
+  }
+
+  .crew-section {
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    gap: 70px;
+    .photo-container {
+      width: 433px;
+      height: 502px;
+      &::after {
+        display: none;
+      }
+    }
+    .description {
+      h4 {
+        font-size: 1.5rem;
+      }
+      h3 {
+        font-size: 2.5rem;
+      }
+      p {
+        margin: auto 3rem;
+      }
+    }
+  }
+
+  .oval {
+    top: 55%;
+    width: 22px;
+    height: 22px;
+  }
+
+  /* TECH TABLET */
+
+  .tech-body {
+    background-image: url(../assets/technology/background-technology-tablet.jpg);
+  }
+
+  .tech__buttons-btn {
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+  }
+
+  .description-tech {
+    .subheading-2 {
+      font-size: 16px;
+      letter-spacing: 2.7px;
+    }
+    h3 {
+      font-size: 40px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+
+  .navbar-nav {
+    padding: 0 3rem;
+  }
+
+  .description p {
+    margin: auto 25%;
+  }
+
+  .crew-section {
+    .description p {
+      margin: auto 25%;
+    }
+  }
+
+  .oval {
+    width: 25px;
+    height: 25px;
+  }
+
+  .check-oval {
+    &-1 {transform: translate(-1430%, 20px);}
+    &-2 {transform: translate(-1180%, 20px);} 
+    &-3 {transform: translate(1120%, 20px);}
+    &-4 {transform: translate(1370%, 20px);}
+  }
+
+  .tech__main-container {
+    picture {
+        display: flex;
+        justify-content: center;
+        img {
+          max-width: 800px;
+          max-height: 350px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  .check-oval {
+    &-1::after {
+      content: "<";
+      position: absolute;
+      left: -100px;
+      font-size: 50px;
+      font-weight: bold;
+      color: var(--white);
+      opacity: 1 !important;
+      animation: inOut linear 2s infinite both;
+    }
+    &-4::after {
+      content: ">";
+      position: absolute;
+      left: 100px;
+      font-size: 50px;
+      font-weight: bold;
+      color: var(--white);
+      opacity: 1 !important;
+      animation: outIn linear 2s infinite both;
+    }
+  }
+
+}
+@keyframes inOut {
+  0% {transform: translate(0px, -32px);}
+  50% {transform: translate(-5px, -32px);}
+  100% {transform: translate(0px, -32px);}
+}
+@keyframes outIn {
+  0% {transform: translate(0px, -32px);}
+  50% {transform: translate(5px, -32px);}
+  100% {transform: translate(0px, -32px);}
+}
+
+@media (min-width: 1200px) {
+  body {
+    background-image: url(../assets/home/background-home-desktop.jpg);
+  }
+
+  .destination-body {
+    background-image: url(../assets/destination/background-destination-desktop.jpg);
+  }
+
+  .navbar { 
+    .container-fluid {
+    margin-top: 1.8rem;
+    padding-left: 55px;
+    align-items: center;
+    }
+    &-nav {
+      justify-content: center;
+      padding-right: 10%;
+      width: 65%;
+      max-width: 900px;
+      background-color: var(--template-glass-1);
+      backdrop-filter: blur(10px);
+      &::after {
+        --width: 50%;
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: calc(var(--width) * (-1) + 30px);
+        width: var(--width);
+        height: 2px;
+        background-color: rgba(255, 255, 255, 0.25);
+      }
+      .nav-link {
+        span {
+          display: inline;
+        }
+      }
+    }
+  }
+  
+
+  /* DESTINATION DESKTOP */
+
+  .step-name {
+    font-size: 1.75rem;
+    letter-spacing: 4.72px;
+    padding-left: 10rem;
+    margin: 5rem 0 4rem;
+    span {
+      padding-right: 1.5rem;
+    }
+  }
+
+  .destination-main {
+    margin: auto 0;
+  }
+
+  .planet-container {
+    width: 27.8125rem;
+  }
+
+  .description {
+  align-items: flex-start;
+  margin: 0;
+  padding: 0;
+  padding-right: 8rem ;
+  .nav-link {
+    font-size: 1rem;
+    letter-spacing: 2.7px;
+    padding-bottom: 8px;
+  }
+  h2 {
+    font-size: 6.25rem;
+    margin: 2rem 0 1.5rem;
+  }
+  p {
+    font-size: 1.125rem;
+    line-height: 32px;
+    text-align: justify;
+    margin: 0 1rem 0 0;
+  }
+  .line {
+    width: 100%;
+    margin: 4rem 0 1rem;
+  }
+  .features {
+    justify-content: flex-start;
+    gap: 5rem;
+    text-align: start;
+    .subheading-1 {
+      font-size: 1.75rem;
+    }
+  }
+}
+  
+  /* CREW DESKTOP */
+
+  .crew-body {
+    background-image: url(../assets/crew/background-crew-desktop.jpg);;
+  }
+
+  .crew-main {
+    .step-name {
+      margin-bottom: 0;
+    }
+  }
+
+  .crew-section {
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    text-align: start;
+    gap: 0px;
+    height: auto;
+    .photo-container {
+      margin-top: -5rem;
+      width: 100%;
+      height: 482px;
+    }
+    .description {
+      margin-top: 2rem;
+      padding-left: 10rem;
+      padding-right: 0;
+      p {
+        font-size: 1.125rem;
+        line-height: 32px;
+        text-align: justify;
+        margin: 0 1rem 0 0;
+      }
+      h4 {
+        font-size: 32px;
+        margin: 0;
+      }
+      h3 {
+        font-size: 54px;
+      }
+    }
+  }
+
+
+  .check-oval-1 {transform: translate(-330%); top: 70%; left: 15rem;}
+  .check-oval-2 {transform: translate(-130%); top: 70%; left: 15rem;}
+  .check-oval-3 {transform: translate(70%); top: 70%; left: 15rem;}
+  .check-oval-4 {transform: translate(270%); top: 70%; left: 15rem;}
+
+  .check-oval-1::after {
+    display: none;
+  }
+
+  .check-oval-4::after {
+    display: none;
+  }
+
+
+  /* TECH DESKTOP */
+
+  .tech-body {
+    background-image: url(../assets/technology/background-technology-desktop.jpg);
+  }
+
+  .tech__main-container {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-left: 10rem;
+    padding-bottom: 5rem;
+    picture {
+      img {
+        max-width:  515px;
+        max-height: 527px;
+        object-fit: cover;
+        margin-right: 15px;
+        margin-top: -4rem;
+      }
+    }
+    .tech__buttons {
+      flex-direction: column;
+      order: 10;
+      margin: 0;
+      padding-right: 4rem; 
+      &-btn {
+        font-size: 2rem;
+        letter-spacing: 2px;
+        width: 80px;
+        height: 80px;
+      }
+    }
+  }
+
+  .description-tech {
+    width: 500px;
+    padding-right: 2rem;
+    h3 {
+      font-size: 52px;
+    }
+    p {
+      font-size: 18px;
+      line-height: 32px;
+    }
+  }
+}
