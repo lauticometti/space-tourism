@@ -1,0 +1,144 @@
+.navbar {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 16px;
+  letter-spacing: 2.7px;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  padding: 20px 10px;
+  &-brand {
+    display: block;
+    margin: 0;
+    padding: 0;
+    align-self: center;
+    animation: rotating 2s linear infinite both;
+    .logo {
+      width: 40px;
+      height: 40px;
+    }
+  }
+  .offcanvas {
+    background-color: rgba(105, 105, 105, 0.1);
+    backdrop-filter: blur(80px);
+    width: 55% !important;
+    &-header {
+      margin: 0.5rem;
+      .close-btn {
+        background-color: transparent;
+        border: none;
+        margin-right: 0.8rem;
+      }
+    }
+    &-backdrop {
+      background-color: transparent;
+    }
+  }
+}
+
+@keyframes rotating {
+  0% {
+    transform: rotate(0deg) translate(5px) rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg) translate(5px) rotate(-360deg);
+  }
+}
+
+.nav-item {
+  margin: 0 0 20px 20px;
+}
+
+.nav-link {
+  padding: 0;
+  color: #fff;
+  width: fit-content;
+  &.active {
+    color: #fff !important;
+    border-bottom: 1px solid $white;
+  }
+  &:hover {
+    color: #fff;
+  }
+  &:focus {
+    color: $alt;
+  }
+  span {
+    font-weight: bold;
+    padding-right: 0.5rem;
+  }
+}
+
+@media (min-width: 576px) {
+  .navbar {
+    padding: 0;
+    .container-fluid {
+      align-items: flex-start;
+      padding-left: 45px;
+    }
+    &-brand {
+      display: block;
+      .logo {
+        width: 48px;
+        height: 48px;
+      }
+    }
+    .offcanvas {
+      backdrop-filter: none;
+    }
+    &-nav {
+      background-color: $template-glass-1;
+      backdrop-filter: blur(2px);
+      padding: 0 1.5rem;
+      .nav-item {
+        margin: auto 1rem;
+      }
+      .nav-link {
+        display: block;
+        width: 100%;
+        padding: 2.1rem 0 !important;
+        span {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar-nav {
+    padding: 0 3rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .navbar {
+    .container-fluid {
+      margin-top: 1.8rem;
+      padding-left: 55px;
+      align-items: center;
+    }
+    &-nav {
+      justify-content: center;
+      padding-right: 10%;
+      width: 65%;
+      max-width: 900px;
+      background-color: $template-glass-1;
+      backdrop-filter: blur(10px);
+      &::after {
+        --width: 50%;
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: calc(var(--width) * (-1) + 30px);
+        width: var(--width);
+        height: 2px;
+        background-color: rgba(255, 255, 255, 0.25);
+      }
+      .nav-link {
+        span {
+          display: inline;
+        }
+      }
+    }
+  }
+}
