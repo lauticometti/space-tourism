@@ -9,6 +9,8 @@
 @import "./lc-variables";
 @import "./lc-general-settings";
 @import "./lc-navbar";
+@import "./lc-buttons";
+@import "./lc-sliders";
 
 .title-container {
   margin: 0 auto 25px;
@@ -21,35 +23,11 @@
   text-align: center;
 }
 
-.explore__ctr {
-  min-height: 220px;
-  position: relative;
-  &-btn {
-    font-family: "Bellefair";
-    font-size: 20px;
-    text-transform: uppercase;
-    letter-spacing: 1.25px;
-
-    @include flex-row(center, center);
-    width: 150px;
-    height: 150px;
-
-    background-color: $white;
-    border: none;
-    border-radius: 50%;
-    outline: 0px solid #4d4d4dcc;
-    transition: all 0.2s;
-    &:hover {
-      outline-width: 50px;
-      transition: outline 0.2s;
-    }
-    &-text {
-      color: $main;
-    }
-  }
-}
-
 /* DESTINATION STYLES */
+
+.destination-main {
+  position: relative;
+}
 
 .step-name {
   font-size: 1rem;
@@ -68,25 +46,25 @@
   }
 }
 
-.nav {
-  font-family: "Barlow Condensed";
-  font-size: 14px;
-  letter-spacing: 2.36px;
-  text-transform: uppercase;
-  gap: 25px;
-  &-link {
-    color: $alt;
-    &.active {
-      color: $white;
-    }
-  }
-}
+// .nav {
+//   font-family: "Barlow Condensed";
+//   font-size: 14px;
+//   letter-spacing: 2.36px;
+//   text-transform: uppercase;
+//   gap: 25px;
+//   &-link {
+//     color: $alt;
+//     &.active {
+//       color: $white;
+//     }
+//   }
+// }
 
 .description {
   @include flex-col($align: center);
   h2 {
     font-size: 3.5rem;
-    margin-top: 1.5rem;
+    margin-top: 2.5rem;
     color: $white;
   }
   p {
@@ -95,6 +73,7 @@
     text-align: center;
     line-height: 25px;
     margin: auto 3rem;
+    min-width: 210px
   }
 }
 
@@ -110,7 +89,7 @@
   margin-top: 2rem;
   margin-bottom: 2.5rem;
 
-  @include flex-row($align: center);
+  @include flex-row($justify: center);
   gap: 2rem;
 
   text-align: center;
@@ -135,8 +114,6 @@ sub {
 }
 
 /* CREW STYLES */
-
-
 
 .crew-main {
   position: relative;
@@ -181,108 +158,6 @@ sub {
   }
 }
 
-/* WORKING ON CREW SLIDER */
-
-.oval {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  @include size(18px, 18px);
-  border-radius: 50%;
-  background-color: $white;
-  opacity: 20%;
-  -webkit-appearance: none;
-  appearance: none;
-  transition: 0.5s;
-  z-index: 10;
-  &:checked {
-    opacity: 100%;
-  }
-}
-
-.check-oval {
-  &-1 {
-    transform: translate(-330%, 20px);
-  }
-  &-2 {
-    transform: translate(-130%, 20px);
-  }
-  &-3 {
-    transform: translate(70%, 20px);
-  }
-  &-4 {
-    transform: translate(270%, 20px);
-  }
-}
-
-/* --- FIRST CHECKED --- */
-
-.check-oval-1:checked ~ #crew {
-  &-1 {
-    display: flex;
-  }
-  &-2 {
-    display: none;
-  }
-  &-3 {
-    display: none;
-  }
-  &-4 {
-    display: none;
-  }
-}
-
-/* --- SECOND CHECK --- */
-
-.check-oval-2:checked ~ #crew {
-  &-1 {
-    display: none;
-  }
-  &-2 {
-    display: flex;
-  }
-  &-3 {
-    display: none;
-  }
-  &-4 {
-    display: none;
-  }
-}
-
-/* --- THIRD CHECK --- */
-
-.check-oval-3:checked ~ #crew {
-  &-1 {
-    display: none;
-  }
-  &-2 {
-    display: none;
-  }
-  &-3 {
-    display: flex;
-  }
-  &-4 {
-    display: none;
-  }
-}
-
-/* --- FOURTH CHECK --- */
-
-.check-oval-4:checked ~ #crew {
-  &-1 {
-    display: none;
-  }
-  &-2 {
-    display: none;
-  }
-  &-3 {
-    display: none;
-  }
-  &-4 {
-    display: flex;
-  }
-}
-
 /* TECH STYLES */
 
 .tech__main-container {
@@ -300,32 +175,6 @@ sub {
 
 .step-name--tech {
   margin-bottom: 35px;
-}
-
-.tech__buttons {
-  @include flex-row(center);
-  gap: 30px;
-  margin: 40px auto;
-  font-family: "Bellefair", sans-serif;
-  &-btn {
-    @include flex-row(center, center);
-    width: 40px;
-    height: 40px;
-    border: 1px solid $white-05;
-    border-radius: 50%;
-
-    font-style: normal;
-    font-size: 1rem;
-    transition: 0.2s;
-    &:hover {
-      border-color: $white;
-      color: $white;
-    }
-    &.active {
-      color: $main;
-      background-color: $white;
-    }
-  }
 }
 
 .description-tech {
@@ -357,16 +206,6 @@ sub {
     font-size: 1rem;
     line-height: 28px;
     margin: auto 15%;
-  }
-
-  .explore__ctr {
-    min-height: 20rem;
-    &-btn {
-      width: 242px;
-      height: 242px;
-      font-size: 32px;
-      letter-spacing: 2px;
-    }
   }
 
   /* DESTINATION TABLET */
@@ -423,19 +262,8 @@ sub {
     }
   }
 
-  .oval {
-    top: 55%;
-    width: 22px;
-    height: 22px;
-  }
 
   /* TECH TABLET */  
-
-  .tech__buttons-btn {
-    width: 60px;
-    height: 60px;
-    font-size: 24px;
-  }
 
   .description-tech {
     .subheading-2 {
@@ -460,25 +288,6 @@ sub {
     }
   }
 
-  .oval {
-    width: 25px;
-    height: 25px;
-  }
-
-  .check-oval {
-    &-1 {
-      transform: translate(-1430%, 20px);
-    }
-    &-2 {
-      transform: translate(-1180%, 20px);
-    }
-    &-3 {
-      transform: translate(1120%, 20px);
-    }
-    &-4 {
-      transform: translate(1370%, 20px);
-    }
-  }
 
   .tech__main-container {
     picture {
@@ -488,53 +297,6 @@ sub {
         max-height: 350px;
       }
     }
-  }
-}
-
-@media (min-width: 1000px) {
-  .check-oval {
-    &-1::after {
-      content: "<";
-      position: absolute;
-      left: -100px;
-      font-size: 50px;
-      font-weight: bold;
-      color: $white;
-      opacity: 1 !important;
-      animation: inOut linear 2s infinite both;
-    }
-    &-4::after {
-      content: ">";
-      position: absolute;
-      left: 100px;
-      font-size: 50px;
-      font-weight: bold;
-      color: $white;
-      opacity: 1 !important;
-      animation: outIn linear 2s infinite both;
-    }
-  }
-}
-@keyframes inOut {
-  0% {
-    transform: translate(0px, -32px);
-  }
-  50% {
-    transform: translate(-5px, -32px);
-  }
-  100% {
-    transform: translate(0px, -32px);
-  }
-}
-@keyframes outIn {
-  0% {
-    transform: translate(0px, -32px);
-  }
-  50% {
-    transform: translate(5px, -32px);
-  }
-  100% {
-    transform: translate(0px, -32px);
   }
 }
 
@@ -552,7 +314,7 @@ sub {
     }
   }
 
-  .destination-main {
+  .destination-section {
     margin: auto 0;
   }
 
@@ -562,14 +324,10 @@ sub {
 
   .description {
     align-items: flex-start;
+    justify-content: flex-start;
     margin: 0;
     padding: 0;
     padding-right: 8rem;
-    .nav-link {
-      font-size: 1rem;
-      letter-spacing: 2.7px;
-      padding-bottom: 8px;
-    }
     h2 {
       font-size: 6.25rem;
       margin: 2rem 0 1.5rem;
@@ -582,7 +340,7 @@ sub {
     }
     .line {
       width: 100%;
-      margin: 4rem 0 1rem;
+      margin: 2rem 0 1rem;
     }
     .features {
       justify-content: flex-start;
@@ -632,34 +390,7 @@ sub {
     }
   }
 
-  .check-oval-1 {
-    transform: translate(-330%);
-    top: 70%;
-    left: 15rem;
-  }
-  .check-oval-2 {
-    transform: translate(-130%);
-    top: 70%;
-    left: 15rem;
-  }
-  .check-oval-3 {
-    transform: translate(70%);
-    top: 70%;
-    left: 15rem;
-  }
-  .check-oval-4 {
-    transform: translate(270%);
-    top: 70%;
-    left: 15rem;
-  }
-
-  .check-oval-1::after {
-    display: none;
-  }
-
-  .check-oval-4::after {
-    display: none;
-  }
+  
 
   /* TECH DESKTOP */
 
@@ -674,18 +405,6 @@ sub {
         object-fit: cover;
         margin-right: 15px;
         margin-top: -4rem;
-      }
-    }
-    .tech__buttons {
-      flex-direction: column;
-      order: 10;
-      margin: 0;
-      padding-right: 4rem;
-      &-btn {
-        font-size: 2rem;
-        letter-spacing: 2px;
-        width: 80px;
-        height: 80px;
       }
     }
   }

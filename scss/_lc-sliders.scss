@@ -1,0 +1,69 @@
+/* --- INPUT IN CHECKED ACTIVE DISPLAY FLEX ON HER SECTION --- */
+
+/* --- FIRST CHECKED --- */
+
+.oval.sb-1:checked ~ #crew, .rect--1:checked ~ #destination {
+  &-1 {
+    display: flex;
+  }
+  &-2 {
+    display: none;
+  }
+  &-3 {
+    display: none;
+  }
+  &-4 {
+    display: none;
+  }
+}
+
+/* --- SECOND CHECK --- */
+
+.oval.sb-2:checked ~ #crew, .rect--2:checked ~ #destination {
+  &-1 {
+    display: none;
+  }
+  &-2 {
+    display: flex;
+  }
+  &-3 {
+    display: none;
+  }
+  &-4 {
+    display: none;
+  }
+}
+
+/* --- THIRD CHECK --- */
+
+.oval.sb-3:checked ~ #crew, .rect--3:checked ~ #destination {
+  &-1 {
+    display: none;
+  }
+  &-2 {
+    display: none;
+  }
+  &-3 {
+    display: flex;
+  }
+  &-4 {
+    display: none;
+  }
+}
+
+/* --- FOURTH CHECK --- */
+
+.oval.sb-4:checked ~ #crew, .rect--4:checked ~ #destination {
+  &-1 {
+    display: none;
+  }
+  &-2 {
+    display: none;
+  }
+  &-3 {
+    display: none;
+  }
+  &-4 {
+    display: flex;
+  }
+}

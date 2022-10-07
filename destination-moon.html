@@ -47,24 +47,25 @@
     </nav>
   </header>
 
-  <main>
-    <h5 class="step-name" ><span>01</span>Pick your destination</h5>
-  
-    <section class="destination-main row">
+  <main class="destination-main">
+    <h5 class="step-name"><span>01</span>Pick your destination</h5>
+
+    <input class="rectangle-btn rect--1" type="radio" name="slider-btn" checked>
+    <input class="rectangle-btn rect--2" type="radio" name="slider-btn">
+    <input class="rectangle-btn rect--3" type="radio" name="slider-btn">
+    <input class="rectangle-btn rect--4" type="radio" name="slider-btn">
+
+<!-- SECTIONS DE LOS CUATRO DESTINOS. -->
+
+    <!-- DESTINO 1 - MOON -->
+    <section id="destination-1" class="destination-section row">
       <div class="planet-container">
         <img src="./assets/destination/image-moon.webp" alt="The Moon">
       </div>
+
       <div class="description col-12 col-xl-6">
-        <nav class="nav justify-content-center">
-          <a class="nav-link active" aria-current="page" href="./destination-moon.html">Moon</a>
-          <a class="nav-link" href="./destination-mars.html">Mars</a>
-          <a class="nav-link" href="./destination-europa.html">Europa</a>
-          <a class="nav-link" href="./destination-titan.html">Titan</a>
-        </nav>
         <h2>MOON</h2>
-        <p>See our planet as you&#8217;ve never seen it before. A perfect relaxing trip away to help
-          regain perspective and come back refreshed. While you&#8217;re there, take in some history
-          by visiting the Luna 2 and Apollo 11 landing sites.</p>
+        <p>See our planet as you&#8217;ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you&#8217;re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.</p>
           <div class="line"></div>
           <div class="features">
             <div class="distance">
@@ -79,6 +80,74 @@
       </div>
     </section>
 
+  <!-- DESTINO 2 - MARS -->
+    <section id="destination-2" class="destination-section row">
+      <div class="planet-container col-12 col-xl-6">
+        <img src="./assets/destination/image-mars.webp" alt="Mars">
+      </div>
+
+      <div class="description col-12 col-xl-6">  
+        <h2>MARS</h2>
+        <p>Don&#8217;t forget to pack your hiking boots. You&#8217;ll need them to tackle Olympus Mons, the tallest planetary mountain in our solar system. It&#8217;s two and a half times the size of Everest!</p>
+          <div class="line"></div>
+          <div class="features">
+            <div class="distance">
+              <sub class="subheading-2">Avg. distance</sub>
+              <h6 class="subheading-1">225 mil. km</h6>
+            </div>
+            <div class="time">
+              <sub class="subheading-2">Est. travel time</sub>
+              <h6 class="subheading-1">9 months</h6>
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <!-- DESTINO 3 - EUROPA -->
+    <section id="destination-3" class="destination-section row">
+      <div class="planet-container col-12 col-xl-6">
+        <img src="./assets/destination/image-europa.webp" alt="Europa">
+      </div>
+
+      <div class="description col-12 col-xl-6">  
+        <h2>EUROPA</h2>
+        <p>The smallest of the four Galilean moons orbiting Jupiter, Europa is a winter lover&#8217;s dream. With an icy surface, it&#8217;s perfect for a bit of ice skating, curling, hockey, or simple relaxation in your snug wintery cabin.</p>
+          <div class="line"></div>
+          <div class="features">
+            <div class="distance">
+              <sub class="subheading-2">Avg. distance</sub>
+              <h6 class="subheading-1">628 mil. km</h6>
+            </div>
+            <div class="time">
+              <sub class="subheading-2">Est. travel time</sub>
+              <h6 class="subheading-1">3 years</h6>
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <!-- DESTINO 4 - TITAN -->
+    <section id="destination-4" class="destination-section row">
+      <div class="planet-container col-12 col-xl-6">
+        <img src="./assets/destination/image-titan.webp" alt="TITAN">
+      </div>
+
+      <div class="description col-12 col-xl-6">
+        <h2>TITAN</h2>
+        <p>The only moon known to have a dense atmosphere other than Earth, Titan is a home away from home (just a few hundred degrees colder!). As a bonus, you get striking views of the Rings of Saturn.</p>
+          <div class="line"></div>
+          <div class="features">
+            <div class="distance">
+              <sub class="subheading-2">Avg. distance</sub>
+              <h6 class="subheading-1">1.6 bil. km</h6>
+            </div>
+            <div class="time">
+              <sub class="subheading-2">Est. travel time</sub>
+              <h6 class="subheading-1">7 years</h6>
+            </div>
+          </div>
+      </div>
+    </section>
   </main>
   
   

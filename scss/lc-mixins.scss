@@ -1,18 +1,73 @@
-@mixin flex-row($justify: flex-start, $align: flex-start, $dir: row){
+@mixin flex-row($justify: flex-start, $align: flex-start, $dir: row) {
   display: flex;
   flex-direction: $dir;
   justify-content: $justify;
   align-items: $align;
 }
 
-@mixin flex-col($justify: flex-start, $align: flex-start, $dir: column){
+@mixin flex-col($justify: flex-start, $align: flex-start, $dir: column) {
   display: flex;
   flex-direction: $dir;
   justify-content: $justify;
   align-items: $align;
 }
 
-@mixin size($width: 100%, $height: auto){
+@mixin size($width: 100%, $height: auto) {
   width: $width;
   height: $height;
+}
+
+@mixin float-btn($top, $left, $bg: #ffffff, $index: 10) {
+  position: absolute;
+  top: $top;
+  left: $left;
+  background-color: $bg;
+  -webkit-appearance: none;
+  appearance: none;
+  z-index: $index;
+  transition: 0.5s;
+}
+
+@mixin media($size) {
+  @if $size == phone-up {
+    @media (min-width: 480px) {
+      @content;
+    }
+  } @else if $size == big-phone-up {
+    @media (min-width: 576px) {
+      @content;
+    }
+  } @else if $size == tablet-up {
+    @media (min-width: 768px) {
+      @content;
+    }
+  } @else if $size == big-tablet-up {
+    @media (min-width: 900px) {
+      @content;
+    }
+  } @else if $size == desktop-up {
+    @media (min-width: 1200px) {
+      @content;
+    }
+  } @else if $size == big-desktop-up {
+    @media (min-width: 1600px) {
+      @content;
+    }
+  } @else {
+    @media (min-width: #{$size}) {
+      @content;
+    }
+  }
+}
+
+@mixin media-max($size) {
+  @media (max-width: #{$size}) {
+    @content;
+  }
+}
+
+@mixin media-minmax($min, $max) {
+  @media screen and (min-width: #{$min}) and (max-width: #{$max}) {
+    @content;
+  }
 }
