@@ -8501,13 +8501,15 @@ a {
 
 .nav-link {
   padding: 0;
-  color: #fff;
-  width: fit-content; }
-  .nav-link.active {
-    color: #fff !important;
-    border-bottom: 1px solid #ffffff; }
+  color: #d0d6f9;
+  width: fit-content;
+  border-bottom: 1px solid rgba(255, 255, 255, 0); }
   .nav-link:hover {
-    color: #fff; }
+    color: #ffffff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5); }
+  .nav-link.active {
+    color: #ffffff !important;
+    border-bottom: 1px solid white; }
   .nav-link:focus {
     color: #d0d6f9; }
   .nav-link span {
@@ -8615,6 +8617,8 @@ a {
   height: 18px;
   border-radius: 50%;
   opacity: 20%; }
+  .oval:hover {
+    opacity: 60%; }
   .oval:checked {
     opacity: 100%; }
 
@@ -8718,7 +8722,8 @@ a {
   height: 0.25rem;
   background-color: rgba(255, 255, 255, 0);
   border-radius: 2px;
-  transition: 0.2s; }
+  transition: 0.2s;
+  color: #d0d6f9; }
   .rectangle-btn:checked {
     background-color: white;
     color: #ffffff; }

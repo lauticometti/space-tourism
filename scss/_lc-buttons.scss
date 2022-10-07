@@ -49,6 +49,9 @@
   @include size(18px, 18px);
   border-radius: 50%;
   opacity: 20%;
+  &:hover {
+    opacity: 60%;
+  }
   &:checked {
     opacity: 100%;
   }
@@ -101,7 +104,7 @@
   }
 }
 
-@include media-minmax(1000px, 1200px){
+@include media-minmax(1000px, 1200px) {
   .oval {
     &.sb-1::after {
       content: "<";
@@ -150,7 +153,6 @@
 }
 
 @include media(desktop-up) {
-  
   .oval.sb-1 {
     transform: translate(-330%);
     top: 70%;
@@ -183,6 +185,7 @@
   background-color: rgba($color: $white, $alpha: 0);
   border-radius: 2px;
   transition: 0.2s;
+  color: $alt;
   &:checked {
     background-color: rgba($color: $white, $alpha: 1);
     color: $white;
@@ -200,11 +203,10 @@
   @include media(desktop-up) {
     top: 6rem;
     left: 67%;
-    @include size(4.2rem, 0.4rem)
+    @include size(4.2rem, 0.4rem);
   }
-  @include media(big-desktop-up){
+  @include media(big-desktop-up) {
     left: 60%;
-    
   }
 }
 
