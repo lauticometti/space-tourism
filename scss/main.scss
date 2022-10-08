@@ -5,12 +5,12 @@
 // Then add additional custom code here
 
 @import "https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap";
-@import "./lc-mixins.scss";
-@import "./lc-variables";
-@import "./lc-general-settings";
-@import "./lc-navbar";
-@import "./lc-buttons";
-@import "./lc-sliders";
+@import "lc-mixins";
+@import "lc-variables";
+@import "lc-general-settings";
+@import "lc-navbar";
+@import "lc-buttons";
+@import "lc-sliders";
 
 .title-container {
   margin: 0 auto 25px;
@@ -45,20 +45,6 @@
     width: 100%;
   }
 }
-
-// .nav {
-//   font-family: "Barlow Condensed";
-//   font-size: 14px;
-//   letter-spacing: 2.36px;
-//   text-transform: uppercase;
-//   gap: 25px;
-//   &-link {
-//     color: $alt;
-//     &.active {
-//       color: $white;
-//     }
-//   }
-// }
 
 .description {
   @include flex-col($align: center);
