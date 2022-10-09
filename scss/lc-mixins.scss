@@ -17,14 +17,17 @@
   height: $height;
 }
 
-@mixin float-btn($top, $left, $bg: #ffffff, $index: 10) {
+@mixin absolute($top, $left, $index: 10) {
   position: absolute;
   top: $top;
   left: $left;
+  z-index: $index;
+}
+
+@mixin reset-radio($bg: $white) {
   background-color: $bg;
   -webkit-appearance: none;
   appearance: none;
-  z-index: $index;
   transition: 0.5s;
 }
 

@@ -42,10 +42,11 @@
 
 // XXXXXXXX
 
-//IMPUTS OVAL BUTTONS, POSITIONED IN MIDDLE OF HER CONTAINER. GOOD FOR SLIDER
+//IMPUTS OVAL BUTTONS, POSITIONED IN MIDDLE OF HER CONTAINER
 
 .oval {
-  @include float-btn(50%, 50%, $white);
+  @include reset-radio();
+  @include absolute(50%, 50%, $white);
   @include size(18px, 18px);
   border-radius: 50%;
   opacity: 20%;
@@ -177,10 +178,11 @@
 
 // XXXXXXXX
 
-//IMPUTS RECTANGLES BUTTONS WITH NAME, GOOD FOR SLIDERS
+//IMPUTS RECTANGLES BUTTONS WITH NAME
 
 .rectangle-btn {
-  @include float-btn(14.5rem, 48%);
+  @include reset-radio();
+  @include absolute(14.5rem, 48%);
   @include size(2.8rem, 0.25rem);
   background-color: rgba($color: $white, $alpha: 0);
   border-radius: 2px;
@@ -268,53 +270,86 @@
 
 // XXXXXXXX
 
-//LIST OF ROUNDED BUTTONS WITH TEXT INSIDE
+//ROUNDED GHOST BUTTONS, WITH NUMBERS
 
-.tech__buttons {
-  @include flex-row(center);
-  gap: 30px;
-  margin: 40px auto;
-  font-family: "Bellefair", sans-serif;
-  &-btn {
-    @include flex-row(center, center);
-    width: 40px;
-    height: 40px;
-    border: 1px solid $white-05;
-    border-radius: 50%;
-
-    font-style: normal;
-    font-size: 1rem;
-    transition: 0.2s;
-    &:hover {
-      border-color: $white;
-      color: $white;
-    }
-    &.active {
-      color: $main;
-      background-color: $white;
-    }
+.rounded-ghost-btn {
+  @include reset-radio(rgba($color: $white, $alpha: 0));
+  @include absolute(21.5rem, 50%);
+  @include size(40px, 40px);
+  transition: 0.2s;
+  border: 1px solid rgba($color: $white, $alpha: 0.5) {
+    radius: 50%;
   }
-}
-
-@include media(big-phone-up) {
-  .tech__buttons-btn {
-    width: 60px;
-    height: 60px;
-    font-size: 24px;
+  color: $white;
+  &:hover {
+    border-color: rgba($color: $white, $alpha: 1);
   }
-}
+  &:checked {
+    background-color: rgba($color: $white, $alpha: 1);
+    color: $main;
+  }
+  @include media(420px) {
+    top: 25rem;
+  }
+  @include media(big-phone-up) {
+    top: 29.5rem;
+  }
+  @include media(700px) {
+    top: 32rem;
+  }
+  @include media(desktop-up) {
+    top: 25rem;
+    left: 15%;
+  }
 
-@include media(desktop-up) {
-  .tech__buttons {
-    flex-direction: column;
-    order: 10;
-    margin: 0;
-    padding-right: 4rem;
-    &-btn {
-      font-size: 2rem;
-      letter-spacing: 2px;
+  &.tb--1 {
+    transform: translate(-230%);
+    &::after {
+      content: "1";
+      @include absolute(50%, 50%);
+      transform: translate(-50%, -50%);
+      font: {
+        family: $font-main;
+        size: 14px;
+      }
+      @include media(desktop-up) {
+        font-size: 32px;
+      }
+    }
+    @include media(desktop-up){
       width: 80px;
       height: 80px;
+      top: 46%;
+      left: 25%;
+    }
+  }
+
+  &.tb--2 {
+    transform: translate(-50%);
+    &::after {
+      @extend .tb--1::after;
+      content: "2";
+    }
+    @include media(desktop-up){
+      width: 80px;
+      height: 80px;
+      top: 46%;
+      left: 25%;
+      transform: translate(-230%, 140%);
+    }
+  }
+  &.tb--3 {
+    transform: translate(130%);
+    &::after {
+      @extend .tb--1::after;
+      content: "3";
+    }
+    @include media(desktop-up){
+      width: 80px;
+      height: 80px;
+      top: 46%;
+      left: 25%;
+      transform: translate(-230%, 280%);
     }
   }
 }

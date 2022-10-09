@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="./css/main.css">
+  
+  <title>Space tourism | Vehicle</title>
+</head>
+<body class="body--tech">
+
+  <header>
+    <nav class="navbar navbar-expand-sm">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html"><img class="logo" src="./assets/shared/logo.svg" alt="white circle icon with four pointed star inside"></a>
+        <button class="hamburguer-btn navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <img class="hamburguer" src="./assets/shared/icon-hamburger.svg" alt="hamburguer icon">
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header justify-content-end">
+            <button class="close-btn" type="button" data-bs-dismiss="offcanvas" aria-label="Close"><img class="close" src="./assets/shared/icon-close.svg" alt=""></button>
+          </div>
+          <div class="offcanvas-body justify-content-end">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="./index.html"><span>00</span> Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./destination.html"><span>01</span> Destination</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./crew.html"><span>02</span> Crew</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./technology.html"><span>03</span> Technology</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  
+  <main class="tech__main">
+
+    <h5 class="step-name step-name--tech"><span>03</span>Space launch 101</h5>
+
+      
+        <input class="rounded-ghost-btn tb--1" type="radio" name="slider-btn" checked>
+        <input class="rounded-ghost-btn tb--2" type="radio" name="slider-btn">
+        <input class="rounded-ghost-btn tb--3" type="radio" name="slider-btn">
+      
+
+        <section id="tech-1" class="tech__section">
+          <picture>
+            <source media="(min-width:1200px)" srcset="./assets/technology/image-launch-vehicle-portrait.jpg">
+            <img src="./assets/technology/image-launch-vehicle-landscape.jpg" alt="Space launcher">
+          </picture>
+          
+          <div class="tech__section-description description">
+            <sub class="subheading-2">The terminology...</sub>
+            <h3>Launch vehicle</h3>
+            <p>A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a
+              payload from Earth's surface to space, usually to Earth orbit or beyond. Our
+              WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall,
+              it's quite an awe-inspiring sight on the launch pad!</p>
+          </div>
+        </section>
+
+
+        <section id="tech-2" class="tech__section">
+          <picture>
+            <source media="(min-width:1200px)" srcset="./assets/technology/image-spaceport-portrait.jpg">
+            <img src="./assets/technology/image-spaceport-landscape.jpg" alt="space launcher">
+          </picture>
+          
+          <div class="tech__section-description description">
+            <sub class="subheading-2">The terminology...</sub>
+            <h3>Spaceport</h3>
+            <p>A spaceport or cosmodrome is a site for launching (or receiving) spacecraft,
+              by analogy to the seaport for ships or airport for aircraft. Based in the
+              famous Cape Canaveral, our spaceport is ideally situated to take advantage
+              of the Earth&#8217;s rotation for launch.</p>
+          </div>
+        </section>
+
+
+        <section id="tech-3" class="tech__section">
+          <picture>
+            <source media="(min-width:1200px)" srcset="./assets/technology/image-space-capsule-portrait.jpg">
+            <img src="./assets/technology/image-space-capsule-landscape.jpg" alt="Space capsule">
+          </picture>
+          
+          <div class="tech__section-description description">
+            <sub class="subheading-2">The terminology...</sub>
+            <h3>Space capsule</h3>
+            <p>A space capsule is an often-crewed spacecraft that uses a blunt-body reentry
+              capsule to reenter the Earth's atmosphere without wings. Our capsule is where
+              you'll spend your time during the flight. It includes a space gym, cinema,
+              and plenty of other activities to keep you entertained.</p>
+          </div>
+        </section>
+
+  </main>
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+</html>
