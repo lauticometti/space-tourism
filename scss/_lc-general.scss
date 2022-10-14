@@ -1,0 +1,255 @@
+.step-name {
+  font-family: "Barlow Condensed";
+  font-size: 1rem;
+  letter-spacing: 2.7px;
+  text-transform: uppercase;
+  text-align: center;
+  color: $white;
+  &-span {
+    opacity: 0.25;
+    padding-right: 0.5rem;
+  }
+  &--tech {
+    margin-bottom: 2rem;
+  }
+
+  @include media(big-phone-up) {
+    letter-spacing: 3.5px;
+    text-align: start;
+    padding-left: 40px;
+  }
+
+  @include media(desktop-up) {
+    font-size: 1.75rem;
+    letter-spacing: 4.72px;
+    padding-left: 10rem;
+    margin: 5rem 0 4rem;
+    &-span {
+      padding-right: 1.5rem;
+    }
+    &--tech {
+      margin-bottom: 1px;
+    }
+  }
+}
+
+/* HOME */
+
+.title__container {
+  @include flex-col($align: center);
+  margin: 0 auto 25px;
+  width: 75%;
+  &-sup {
+    font-family: "Barlow Condensed";
+    font-size: 1rem;
+    letter-spacing: 2.7px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  &-p {
+    font-size: 15px;
+    font-family: "Barlow";
+    text-align: center;
+  }
+
+  @include media(big-phone-up) {
+    &-sup {
+      font-size: 1.25rem;
+      letter-spacing: 3.38px;
+    }
+    &-title {
+      font-size: 9.375rem;
+    }
+    &-p {
+      font-size: 1rem;
+      line-height: 28px;
+      margin: auto 15%;
+    }
+  }
+}
+
+.sign {
+  text-align: center;
+  &__link {
+    font: {
+      family: "Barlow Condensed";
+      size: 1rem;
+    }
+    text-transform: uppercase;
+  }
+  &__span {
+    letter-spacing: 2px;
+    margin-left: 0.5rem;
+  }
+}
+
+/* DESTINATION STYLES */
+
+.main--destination {
+  position: relative;
+}
+
+.planet__container {
+  width: 10.625rem;
+  margin: 35px auto 15px;
+  img {
+    width: 100%;
+  }
+
+  @include media(big-phone-up) {
+    width: 18.75rem;
+    margin: 50px auto 35px;
+  }
+
+  @include media(desktop-up) {
+    width: 27.8125rem;
+  }
+}
+
+.line {
+  width: 85%;
+  height: 2px;
+  margin: 1.5rem auto;
+  background-color: #383b4b;
+  @include media(desktop-up) {
+    width: 100%;
+    margin: 2rem 0 1rem;
+  }
+}
+
+.features {
+  @include flex-row($justify: center);
+  gap: 2rem;
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 2.5rem;
+  text-align: center;
+
+  &-title {
+    font: {
+      family: "Barlow Condensed", sans-serif;
+      size: 14px;
+    }
+    letter-spacing: 2.36px;
+    text-transform: uppercase;
+  }
+  &-data {
+    font: {
+      family: "Bellefair";
+      size: 1.5rem;
+      weight: normal;
+    }
+    text-transform: uppercase;
+    color: $white;
+  }
+  @include media(big-phone-up) {
+    justify-content: space-evenly;
+  }
+  @include media(desktop-up) {
+    justify-content: flex-start;
+    gap: 5rem;
+    text-align: start;
+    &-data {
+      font-size: 1.75rem;
+    }
+  }
+}
+
+/* CREW STYLES */
+
+.main--crew {
+  position: relative;
+}
+
+.step-name--crew {
+  @include media(desktop-up) {
+    margin-bottom: 0;
+  }
+}
+
+.crew__section {
+  height: 482px;
+  text-align: center;
+  @include flex-col;
+  @include media(big-phone-up) {
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    gap: 70px;
+  }
+  @include media(desktop-up) {
+    flex-direction: row-reverse;
+    text-align: start;
+    gap: 0px;
+    height: auto;
+  }
+}
+
+.photo__container {
+  position: relative;
+  width: 327px;
+  height: 223px;
+  margin: 8px auto 0;
+  &-img {
+    object-fit: contain;
+    @include size(100%, 100%);
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    transform: translate(-50%);
+    @include size(85%, 2px);
+    background-color: #383b4b;
+  }
+  @include media(big-phone-up) {
+    width: 433px;
+    height: 502px;
+    &::after {
+      display: none;
+    }
+  }
+  @include media(desktop-up) {
+    margin-top: -5rem;
+    width: 100%;
+    height: 482px;
+  }
+}
+
+/* TECH STYLES */
+
+.tech__section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 7.5rem;
+
+  @include media(desktop-up) {
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    gap: 0;
+    padding-left: 17rem;
+    padding-bottom: 5rem;
+  }
+}
+
+.picture--tech {
+  &-source {
+    display: block;
+  }
+  &-img {
+    width: 100%;
+    max-width: 800px;
+    max-height: 350px;
+  }
+  @include media(desktop-up) {
+    &-img {
+      max-width: 515px;
+      max-height: 527px;
+      object-fit: cover;
+      margin-right: 15px;
+      margin-top: 0;
+    }
+  }
+}

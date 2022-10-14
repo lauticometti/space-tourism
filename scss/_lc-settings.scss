@@ -1,0 +1,90 @@
+.body {
+  background-color: $main;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: "Barlow", sans-serif;
+  color: $alt;
+  @include media(big-phone-up) {
+    background-position: center;
+  }
+
+  &--home {
+    background-image: url(../assets/home/background-home-mobile.jpg);
+    @media (min-width: 576px) {
+      background-image: url(../assets/home/background-home-tablet.jpg);
+    }
+    @include media(desktop-up) {
+      background-image: url(../assets/home/background-home-desktop.jpg);
+    }
+  }
+
+  &--destination {
+    background-image: url(../assets/destination/background-destination-mobile.jpg);
+    @include media(big-phone-up) {
+      background-image: url(../assets/destination/background-destination-tablet.jpg);
+    }
+    @include media(desktop-up) {
+      background-image: url(../assets/destination/background-destination-desktop.jpg);
+    }
+  }
+
+  &--crew {
+    background-image: url(../assets/crew/background-crew-mobile.jpg);
+    @include media(big-phone-up) {
+      background-image: url(../assets/crew/background-crew-tablet.jpg);
+    }
+    @include media(desktop-up) {
+      background-image: url(../assets/crew/background-crew-desktop.jpg);
+    }
+  }
+
+  &--tech {
+    background-image: url(../assets/technology/background-technology-mobile.jpg);
+    @include media(big-phone-up) {
+      background-image: url(../assets/technology/background-technology-tablet.jpg);
+    }
+    @include media(desktop-up) {
+      background-image: url(../assets/technology/background-technology-desktop.jpg);
+    }
+  }
+
+  &--about {
+    background-image: url(../assets/about/background-about-mobile.webp);
+    background-position: 0px;
+
+    @include media(big-phone-up) {
+      background-image: url(../assets/about/background-about-tablet.webp);
+    }
+    @include media(desktop-up) {
+      background-image: url(../assets/about/background-about-desktop.webp);
+    }
+  }
+}
+
+.container-fluid {
+  padding-right: 0;
+}
+
+.row {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: $white;
+}
+
+h1 {
+  font-family: "Bellefair", sans-serif;
+  font-size: 5rem;
+  padding: 10px;
+  text-transform: uppercase;
+  color: $white;
+}
+
+h2,
+h3,
+h4 {
+  font-family: "Bellefair", sans-serif;
+}

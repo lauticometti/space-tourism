@@ -1,6 +1,8 @@
 // BIG CENTER BUTTON WITH BIG BORDER-SHADOW AT HOVER
 
-.explore__ctr {
+.explore__container {
+  @include flex-row(center, center);
+
   min-height: 220px;
   position: relative;
   &-btn {
@@ -21,15 +23,15 @@
     &:hover {
       outline-width: 50px;
       transition: outline 0.2s;
-    }
-    &-text {
-      color: $main;
-    }
+    } 
+  }
+  &-text {
+    color: $main;
   }
 }
 
 @include media(big-phone-up) {
-  .explore__ctr {
+  .explore__container {
     min-height: 20rem;
     &-btn {
       width: 242px;

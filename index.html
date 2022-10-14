@@ -1,69 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="./css/main.css">
-  
-  <title>Space tourism | Home</title>
-  <meta name="description" content="TRIPS SALES. Do you want go to space? Ok. We can help you. Check our destination, choose one and let us give you a truly out of this world experience!">
-  
-</head>
-<body>
-  
-  <header>
-    <nav class="navbar navbar-expand-sm">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="./index.html"><img class="logo" src="./assets/shared/logo.svg" alt="white circle icon with four pointed star inside"></a>
-        <button class="hamburguer-btn navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-          <img class="hamburguer" src="./assets/shared/icon-hamburger.svg" alt="hamburguer icon">
-        </button>
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-          <div class="offcanvas-header justify-content-end">
-            <button class="close-btn" type="button" data-bs-dismiss="offcanvas" aria-label="Close"><img class="close" src="./assets/shared/icon-close.svg" alt=""></button>
-          </div>
-          <div class="offcanvas-body justify-content-end">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./index.html"><span>00</span> Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./destination.html"><span>01</span> Destination</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./crew.html"><span>02</span> Crew</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./technology.html"><span>03</span> Technology</a>
-              </li>
-            </ul>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <title>Space tourism | Home</title>
+    <meta
+      name="description"
+      content="We're a tech company excited to bring you truly otherworldly hyper-experiences. Travel with us to a total of up to four different destinations."
+    />
+  </head>
+  <body class="body body--home">
+    <header>
+      <nav class="navbar navbar-expand-sm">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html"
+            ><img
+              class="logo"
+              src="./assets/shared/logo.svg"
+              alt="White circle icon with four pointed star inside"
+          /></a>
+          <button
+            class="hamburguer-btn navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+          >
+            <img
+              class="hamburguer"
+              src="./assets/shared/icon-hamburger.svg"
+              alt="Hamburguer Icon for responsive menu"
+            />
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header justify-content-end">
+              <button
+                class="close-btn"
+                type="button"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              >
+                <img
+                  class="close"
+                  src="./assets/shared/icon-close.svg"
+                  alt="Close Icon"
+                />
+              </button>
+            </div>
+            <div class="offcanvas-body justify-content-end">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="./index.html"
+                    ><span>00</span> Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./destination.html"
+                    ><span>01</span> Destination</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./crew.html"
+                    ><span>02</span> Crew</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./technology.html"
+                    ><span>03</span> Technology</a
+                  >
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="title__container">
+        <span class="title__container-sup">So, you want to travel to</span>
+        <h1 class="title__container-title">Space</h1>
+        <p class="title__container-p">
+          Let&#8217;s face it; if you want to go to space, you might as well
+          genuinely go to outer space and not hover kind of on the edge of it.
+          Well sit back, and relax because we&#8217;ll give you a truly out of
+          this world experience!
+        </p>
       </div>
-    </nav>
-  </header>
+      <div class="explore__container">
+        <a class="explore__container-btn" href="./destination.html">
+          <span class="explore__container-text">Explore</span>
+        </a>
+      </div>
+    </main>
 
-  <main>
-    <div class="title-container d-flex flex-column align-items-center">
-      <h5>So, you want to travel to</h5>
-      <h1 class="h-1">Space</h1>
-      <p class="main-p">Let&#8217;s face it; if you want to go to space, you might as well genuinely go to
-        outer space and not hover kind of on the edge of it. Well sit back, and relax
-        because we&#8217;ll give you a truly out of this world experience!</p>
-    </div>
-    <div class="explore__ctr d-flex justify-content-center align-items-center">
-      <a class="explore__ctr-btn" href="./destination.html">
-        <span class="explore__ctr-btn-text">Explore</span>
-      </a>
-    </div>
-  </main>
+    <footer class="footer">
+      <p class="sign">
+        <a href="./about.html" class="sign__link"
+          >By <span class="sign__span">Lauti Cometti</span></a
+        >
+      </p>
+    </footer>
 
-<!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-
-</body>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

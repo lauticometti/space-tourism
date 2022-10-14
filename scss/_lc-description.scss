@@ -1,0 +1,154 @@
+.description {
+  @include flex-col($align: center);
+
+  &-span {
+    &--crew {
+      font-size: 1rem;
+      text-transform: uppercase;
+      color: $white;
+      opacity: 50%;
+      margin-top: 3rem;
+      font-family: "Bellefair", sans-serif;
+    }
+    &--tech {
+      font-family: "Barlow Condensed", sans-serif;
+      font-size: 14px;
+      letter-spacing: 2.36px;
+      text-transform: uppercase;
+    }
+  }
+
+  &-title {
+    font-size: 3.5rem;
+    margin-top: 2.5rem;
+    color: $white;
+    &--crew{
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      margin-top: .3rem;
+    }
+    &--tech {
+      text-transform: uppercase;
+      font-size: 1.5rem;
+      margin-top: .8rem;
+    }
+  }
+  &-p {
+    font-family: "Barlow", sans-serif;
+    font-size: 15px;
+    text-align: center;
+    line-height: 25px;
+    margin: auto 3rem;
+    min-width: 210px;
+    &--tech {
+      padding-bottom: 3rem;
+    }
+  }
+
+  @include media(big-phone-up) {
+    &-span {
+      &--crew {
+        font-size: 1.5rem;
+      }
+      &--tech {
+        font-size: 16px;
+        letter-spacing: 2.7px;
+      }
+    }
+    &-title {
+      margin-top: 1.5rem;
+      font-size: 5rem;
+      text-align: center;
+      &--crew {
+        margin-top: 5px;
+        font-size: 2.5rem;
+      }
+      &--tech {
+        font-size: 2.5rem;
+        text-align: start;
+      }
+    }
+    &-p {
+      font-size: 1rem;
+      text-align: center;
+      margin: auto 4.5rem;
+      line-height: 28px;
+      &--crew {
+        margin: auto 3rem;
+      }
+    }
+  }
+
+  @include media(tablet-up) {
+    &-span {
+      &--tech {
+        margin-top: -1rem;
+      }
+    }
+    &-title {
+      &--tech {
+        margin-top: 0;
+      }
+    }
+    &-p {
+      margin: auto 25%;
+    }
+  }
+  
+  @include media (desktop-up) {
+    align-items: flex-start;
+    margin: 0;
+    padding: 0 {
+      right: 8rem;
+    }
+    
+    &--crew {
+      margin-top: 2rem;
+      padding-left: 10rem;
+      padding-right: 0;
+    }
+
+    &--tech {
+      margin-right: 1rem;
+      padding-right: 2rem;
+      width: 500px;
+      gap: 10px;
+    }
+
+    &-span {
+      &--crew {
+        font-size: 32px;
+        margin: 0;
+      }
+    }
+
+    &-title {
+      font-size: 6.25rem;
+      margin: 2rem 0 1.5rem;
+      &--crew {
+        font-size: 54px;
+        margin: 0;
+      }
+      &--tech {
+        font-size: 52px;
+        margin: 0;
+      }
+    }
+    &-p {
+      font-size: 1.125rem;
+      line-height: 32px;
+      text-align: justify;
+      margin: 0 1rem 0 0;
+      &--crew {
+        font-size: 1.125rem;
+        line-height: 32px;
+        text-align: justify;
+        margin: 0 1rem 0 0;
+      }
+      &--tech {
+        font-size: 18px;
+        line-height: 32px;
+      }
+    }
+  }
+}

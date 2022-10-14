@@ -1,7 +1,7 @@
 {
-  "name": "proyectocoder",
+  "name": "space-tourism",
   "version": "1.0.0",
-  "description": "proyecto para desarrollo web",
+  "description": "Space Tourism is a space travel simulator that brings you four out of this world destinations, introduces you to the team members and the technology that will be used.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
