@@ -68,21 +68,6 @@
   }
 }
 
-.sign {
-  text-align: center;
-  &__link {
-    font: {
-      family: "Barlow Condensed";
-      size: 1rem;
-    }
-    text-transform: uppercase;
-  }
-  &__span {
-    letter-spacing: 2px;
-    margin-left: 0.5rem;
-  }
-}
-
 /* DESTINATION STYLES */
 
 .main--destination {
