@@ -1,5 +1,6 @@
 .description {
   @include flex-col($align: center);
+  // color: $white;
 
   &-span {
     &--crew {
