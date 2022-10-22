@@ -8439,8 +8439,8 @@ textarea.form-control-lg {
       content: "";
       position: absolute;
       top: 0;
-      width: 100vw;
-      height: 100vh;
+      width: 100%;
+      height: 100%;
       background-color: rgba(0, 0, 0, 0.1);
       backdrop-filter: brightness(20%);
       z-index: -1; }
@@ -8859,13 +8859,13 @@ h2, .h2, h3, .h3, h4, .h4 {
     align-items: center; }
   .navbar-nav {
     justify-content: center;
-    padding-right: 7%;
+    padding-right: 5%;
     width: 72%;
     max-width: 900px;
     background-color: rgba(70, 70, 70, 0.2);
     backdrop-filter: blur(10px); }
     .navbar-nav::after {
-      --width: 50%;
+      --width: 35%;
       content: "";
       position: absolute;
       top: 50%;
@@ -8934,6 +8934,8 @@ h2, .h2, h3, .h3, h4, .h4 {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center; }
+  .description--about {
+    margin-bottom: 25px; }
   .description-span--crew {
     font-size: 1rem;
     text-transform: uppercase;
@@ -8958,6 +8960,9 @@ h2, .h2, h3, .h3, h4, .h4 {
       text-transform: uppercase;
       font-size: 1.5rem;
       margin-top: 0.8rem; }
+    .description-title--about {
+      font-size: 3rem;
+      margin-top: 0; }
   .description-p {
     font-family: "Barlow", sans-serif;
     font-size: 15px;
@@ -8967,6 +8972,8 @@ h2, .h2, h3, .h3, h4, .h4 {
     min-width: 210px; }
     .description-p--tech {
       padding-bottom: 3rem; }
+    .description-p--about {
+      padding: 0 15%; }
   @media (min-width: 576px) {
     .description-span--crew {
       font-size: 1.5rem; }
@@ -8983,6 +8990,9 @@ h2, .h2, h3, .h3, h4, .h4 {
       .description-title--tech {
         font-size: 2.5rem;
         text-align: start; }
+      .description-title--about {
+        font-size: 3.5rem;
+        margin-top: 0; }
     .description-p {
       font-size: 1rem;
       text-align: center;
@@ -8996,7 +9006,13 @@ h2, .h2, h3, .h3, h4, .h4 {
     .description-title--tech {
       margin-top: 0; }
     .description-p {
-      margin: auto 25%; } }
+      margin: auto 25%; }
+      .description-p--about {
+        margin: auto 15%;
+        font-size: 1.1rem; } }
+  @media (min-width: 900px) {
+    .description-p--about {
+      font-size: 1.2rem; } }
   @media (min-width: 1200px) {
     .description {
       align-items: flex-start;
@@ -9241,3 +9257,80 @@ h2, .h2, h3, .h3, h4, .h4 {
     object-fit: cover;
     margin-right: 15px;
     margin-top: 0; } }
+
+/* ABOUT */
+.space-team__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 25px 0;
+  padding: 0;
+  color: inherit;
+  gap: 25px; }
+  .space-team__container-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+  .space-team__container-title {
+    font-family: "Barlow Condensed";
+    font-size: 2.2rem;
+    font-weight: bolder;
+    color: #ffffff;
+    letter-spacing: 2.7px;
+    text-transform: uppercase;
+    text-align: center; }
+  @media (min-width: 576px) {
+    .space-team__container-img {
+      aspect-ratio: 12/5; }
+    .space-team__container-title {
+      font-size: 2.4rem; } }
+  @media (min-width: 900px) {
+    .space-team__container {
+      flex-direction: row;
+      justify-content: space-evenly;
+      margin: 3rem 0 5rem; }
+      .space-team__container-img {
+        aspect-ratio: 12/8;
+        max-width: 580px; }
+      .space-team__container-title {
+        writing-mode: vertical-lr;
+        font-size: 2.8rem;
+        margin: 0; } }
+  @media (min-width: 1200px) {
+    .space-team__container-img {
+      max-width: 600px; }
+    .space-team__container-title {
+      writing-mode: horizontal-tb;
+      font-size: 3.5rem;
+      margin: 0;
+      position: relative; }
+      .space-team__container-title::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 150px;
+        translate: -50%;
+        width: 0;
+        height: 0;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-top: 20px solid #fff;
+        clear: both; } }
+
+.contact__section .step-one__p-span {
+  border-bottom: 1px solid rgba(0, 0, 0, 0);
+  transition: 0.2s; }
+  .contact__section .step-one__p-span:hover {
+    border-color: black; }
+
+.form__container {
+  padding: 50px 10px; }
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem; }

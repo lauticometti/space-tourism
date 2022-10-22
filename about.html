@@ -93,7 +93,7 @@
                     class="nav-link active"
                     aria-current="page"
                     href="./about.html"
-                    ><span>04</span> About</a
+                    ><span>&#8734;</span> About</a
                   >
                 </li>
               </ul>
@@ -103,15 +103,93 @@
       </nav>
     </header>
 
-    <main class="main--destination">
-      <h3 class="step-name"><span class="step-name-span">04</span> About Us</h3>
-
-      <div class="description">
-        <p class="description-p">
-          Since 2017, we are an American space company focused in bring to as people as possible a way to do tourism for differents celestial places around our solar system. 
-        </p>
+    <main class="main--about">
+      <div class="container-fluid space-team__container">
+        <h3 class="space-team__container-title">About Us</h3>
+        <img
+          class="space-team__container-img"
+          src="./assets/about/space-team-dos.webp"
+          alt="Picture of team members of Space Tourism"
+        />
       </div>
 
+      <div class="description description--about">
+        <h3 class="description-title description-title--about">
+          SPACE TOURISM
+        </h3>
+        <p class="description-p description-p--about">
+          Since 2017, we are an American space company focused in bring to as
+          people as possible a way to do tourism for differents celestial places
+          around our solar system.
+        </p>
+        <div class="container text-center mt-4">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            fill="currentColor"
+            class="bi bi-arrow-down-short"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"
+            />
+          </svg>
+        </div>
+      </div>
+
+      <section class="contact__section bg-light text-dark px-5">
+        <h3 class="contact__section-title text-center text-uppercase pt-4 fs-1">
+          Travel with us
+        </h3>
+
+        <p class="contact__section-intro fs-5">
+          We would love that you will like travel with us. So, let's us give to
+          you a guide about how can you get a trip.
+        </p>
+
+        <h4 class="step-one__title text-uppercase pt-5 pb-2 m-0">
+          01. Select one destination
+        </h4>
+        <p class="step-one__p m-0">
+          Go to
+          <a href="./destination.html" class="step-one__p-span text-info"
+            >Destination page</a
+          >
+          and choose wisdomly your favourite place to travel.
+        </p>
+        <img
+          src="./assets/about/destination-screenshot.webp"
+          alt="Screenshot of destination page showing info of a Jupiter Moon called Europa."
+        />
+
+        <h4 class="step-two__title text-uppercase pt-5 pb-2 m-0">
+          02. Invite up to four friends
+        </h4>
+        <p class="step-two__p m-0">
+          For this unforgettable experience your will need the best travels
+          mates. So, make sure you invite them.
+        </p>
+        <img
+          src="./assets/about/five-friends.webp"
+          alt="A family walking back from the sea to the beach, at sunset."
+        />
+
+        <h4 class="step-three__title text-uppercase pt-5 pb-2 m-0">03. Contact us</h4>
+        <p class="step-two__p m-0">We'll handle the rest. </p>
+        
+        <div class="form__container">
+          <form class="form">
+            <input type="text" class="form__input" placeholder="Name:">
+            <input type="email" class="form__input" placeholder="E-mail:">
+            <textarea class="form__input form__input--message" placeholder="Message:"></textarea>
+
+            <input type="submit" value="Send" class="form__cta">
+          </form>
+        </div>
+
+      </section>
     </main>
 
     <!-- JavaScript Bundle with Popper -->

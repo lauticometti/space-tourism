@@ -116,13 +116,13 @@
     }
     &-nav {
       justify-content: center;
-      padding-right: 7%;
+      padding-right: 5%;
       width: 72%;
       max-width: 900px;
       background-color: $template-glass-1;
       backdrop-filter: blur(10px);
       &::after {
-        --width: 50%;
+        --width: 35%;
         content: "";
         position: absolute;
         top: 50%;

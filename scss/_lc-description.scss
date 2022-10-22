@@ -2,6 +2,10 @@
   @include flex-col($align: center);
   // color: $white;
 
+  &--about {
+    margin-bottom: 25px;
+  }
+
   &-span {
     &--crew {
       font-size: 1rem;
@@ -33,6 +37,10 @@
       font-size: 1.5rem;
       margin-top: 0.8rem;
     }
+    &--about {
+      font-size: 3rem;
+      margin-top: 0;
+    }
   }
   &-p {
     font-family: "Barlow", sans-serif;
@@ -43,6 +51,9 @@
     min-width: 210px;
     &--tech {
       padding-bottom: 3rem;
+    }
+    &--about {
+      padding: 0 15%;
     }
   }
 
@@ -67,6 +78,10 @@
       &--tech {
         font-size: 2.5rem;
         text-align: start;
+      }
+      &--about {
+        font-size: 3.5rem;
+        margin-top: 0;
       }
     }
     &-p {
@@ -93,6 +108,18 @@
     }
     &-p {
       margin: auto 25%;
+       &--about {
+        margin: auto 15%;
+        font-size: 1.1rem;
+       }
+    }
+  }
+
+  @include media(big-tablet-up) {
+    &-p {
+      &--about {
+        font-size: 1.2rem;
+      }
     }
   }
 
