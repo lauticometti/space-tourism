@@ -4,6 +4,9 @@
 # Ignora la carpeta node_modules
 node_modules
 
+# Ignora la carpeta in_building
+in_building
+
 # Ignora todos los archivos de texto
 *.txt
 
