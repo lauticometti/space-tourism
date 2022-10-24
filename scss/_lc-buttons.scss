@@ -209,9 +209,6 @@
     left: 67%;
     @include size(4.2rem, 0.4rem);
   }
-  @include media(big-desktop-up) {
-    left: 60%;
-  }
 }
 
 .rectangle-btn {
