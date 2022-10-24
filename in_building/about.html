@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <title>Space Tourism | About us</title>
+  </head>
+  <body class="body body--about">
+    <header>
+      <nav class="navbar navbar-expand-md">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html"
+            ><img
+              class="logo"
+              src="./assets/shared/logo.svg"
+              alt="White circle icon with four pointed star inside"
+          /></a>
+          <button
+            class="hamburguer-btn navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+          >
+            <img
+              class="hamburguer"
+              src="./assets/shared/icon-hamburger.svg"
+              alt="Hamburguer Icon for responsive menu"
+            />
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header justify-content-end">
+              <button
+                class="close-btn"
+                type="button"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              >
+                <img
+                  class="close"
+                  src="./assets/shared/icon-close.svg"
+                  alt="Close Icon"
+                />
+              </button>
+            </div>
+            <div class="offcanvas-body justify-content-end">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="./index.html"
+                    ><span>00</span> Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./destination.html"
+                    ><span>01</span> Destination</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./crew.html"
+                    ><span>02</span> Crew</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./technology.html"
+                    ><span>03</span> Technology</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="./contact.html"
+                    ><span>&#8734;</span> Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main--about">
+      <div class="container-fluid space-team__container">
+        <h3 class="space-team__container-title">About Us</h3>
+        <img
+          class="space-team__container-img"
+          src="./assets/about/space-team-dos.webp"
+          alt="Picture of team members of Space Tourism"
+        />
+      </div>
+
+      <div class="description description--about">
+        <h3 class="description-title description-title--about">
+          SPACE TOURISM
+        </h3>
+        <p class="description-p description-p--about">
+          Since 2017, we are an American space company focused in bring to as
+          people as possible a way to do tourism for differents celestial places
+          around our solar system.
+        </p>
+        <div class="container text-center mt-4">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            fill="currentColor"
+            class="bi bi-arrow-down-short"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"
+            />
+          </svg>
+        </div>
+      </div>
+
+      <section class="contact__section bg-light text-dark px-5">
+        <h3 class="contact__section-title text-center text-uppercase pt-4 fs-1">
+          Travel with us
+        </h3>
+
+        <p class="contact__section-intro fs-5">
+          We would love that you will like travel with us. So, let's us give to
+          you a guide about how can you get a trip.
+        </p>
+
+        <h4 class="step-one__title text-uppercase pt-5 pb-2 m-0">
+          01. Select one destination
+        </h4>
+        <p class="step-one__p m-0">
+          Go to
+          <a href="./destination.html" class="step-one__p-span text-info"
+            >Destination page</a
+          >
+          and choose wisdomly your favourite place to travel.
+        </p>
+        <img
+          src="./assets/about/destination-screenshot.webp"
+          alt="Screenshot of destination page showing info of a Jupiter Moon called Europa."
+        />
+
+        <h4 class="step-two__title text-uppercase pt-5 pb-2 m-0">
+          02. Invite up to four friends
+        </h4>
+        <p class="step-two__p m-0">
+          For this unforgettable experience your will need the best travels
+          mates. So, make sure you invite them.
+        </p>
+        <img
+          src="./assets/about/five-friends.webp"
+          alt="A family walking back from the sea to the beach, at sunset."
+        />
+
+        <h4 class="step-three__title text-uppercase pt-5 pb-2 m-0">03. Contact us</h4>
+        <p class="step-two__p m-0">We'll handle the rest. </p>
+        
+        <div class="form__container">
+          <form class="form">
+            <input type="text" class="form__input" placeholder="Name:">
+            <input type="email" class="form__input" placeholder="E-mail:">
+            <textarea class="form__input form__input--message" placeholder="Message:"></textarea>
+
+            <input type="submit" value="Send" class="form__cta">
+          </form>
+        </div>
+
+      </section>
+    </main>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
