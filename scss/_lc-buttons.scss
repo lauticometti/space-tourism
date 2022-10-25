@@ -23,7 +23,7 @@
     &:hover {
       outline-width: 50px;
       transition: outline 0.2s;
-    } 
+    }
   }
   &-text {
     color: $main;
@@ -314,20 +314,20 @@
         font-size: 32px;
       }
     }
-    @include media(desktop-up){
+    @include media(desktop-up) {
       width: 80px;
       height: 80px;
       top: 280px;
       transform: translate(-450px, 0%);
     }
     @include media(1250px) {
-      transform: translate(-470px, 20px);      
+      transform: translate(-470px, 20px);
     }
     @include media(1300px) {
-      transform: translate(-490px, 20px);      
+      transform: translate(-490px, 20px);
     }
     @include media(1350px) {
-      transform: translate(-500px, 40px);      
+      transform: translate(-500px, 40px);
     }
   }
 
@@ -337,19 +337,20 @@
       @extend .tb--1::after;
       content: "2";
     }
-    @include media(desktop-up){
+    @include media(desktop-up) {
       width: 80px;
       height: 80px;
       top: 280px;
       transform: translate(-450px, 140%);
-    }@include media(1250px) {
-      transform: translate(-470px, 130px);      
+    }
+    @include media(1250px) {
+      transform: translate(-470px, 130px);
     }
     @include media(1300px) {
-      transform: translate(-490px, 130px);      
+      transform: translate(-490px, 130px);
     }
     @include media(1350px) {
-      transform: translate(-500px, 150px);      
+      transform: translate(-500px, 150px);
     }
   }
   &.tb--3 {
@@ -358,23 +359,62 @@
       @extend .tb--1::after;
       content: "3";
     }
-    @include media(desktop-up){
+    @include media(desktop-up) {
       width: 80px;
       height: 80px;
       top: 280px;
       transform: translate(-450px, 280%);
-    }@include media(1250px) {
-      transform: translate(-470px, 240px);      
+    }
+    @include media(1250px) {
+      transform: translate(-470px, 240px);
     }
     @include media(1300px) {
-      transform: translate(-490px, 240px);      
+      transform: translate(-490px, 240px);
     }
     @include media(1350px) {
-      transform: translate(-500px, 260px);      
+      transform: translate(-500px, 260px);
     }
   }
 }
 
 // XXXXXXXX
 
-//
+//RECT GLASSMORPHISM BUTTONS WITH TEXT
+
+.description-cta {
+  @include flex-row(center, center);
+  width: 10rem;
+  min-height: 2.8rem;
+  margin: 5px auto 20px;
+
+  background: linear-gradient(145deg, #0a0c15, #0c0e19);
+  backdrop-filter: blur(5px);
+  box-shadow: 4px 4px 8px hsl(230, 30%, 15%), -4px -4px 8px hsl(230, 30%, 12%),
+    15px 15px 30px hsl(230, 14%, 14%), -15px -15px 30px hsl(230, 18%, 10%);
+
+  border: 1px solid rgba($color: #fff, $alpha: 0.8);
+  border-radius: 0.5rem;
+  transition: .5s;
+  &:hover {
+    box-shadow: 0px 0px 40px 8px hsl(230, 25%, 15%);
+  }
+  &--anchor {
+    @include flex-row(center, center);
+    width: 100%;
+    height: 2.8rem;
+    font: {
+      family: "Barlow Condensed";
+      size: 1.2rem;
+      weight: bold;
+    }
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    border-radius: 0.5rem;
+    color: #e1e1e1;
+    transition: 0.2s;
+    &:hover {
+      color: #fff;
+      background: linear-gradient(145deg, hsl(230, 33%, 5%), hsl(231, 35%, 7%));
+    }
+  }
+}
