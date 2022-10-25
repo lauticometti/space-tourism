@@ -298,7 +298,6 @@
   }
   @include media(desktop-up) {
     top: 25rem;
-    left: 15%;
   }
 
   &.tb--1 {
@@ -318,8 +317,17 @@
     @include media(desktop-up){
       width: 80px;
       height: 80px;
-      top: 46%;
-      left: 25%;
+      top: 280px;
+      transform: translate(-450px, 0%);
+    }
+    @include media(1250px) {
+      transform: translate(-470px, 20px);      
+    }
+    @include media(1300px) {
+      transform: translate(-490px, 20px);      
+    }
+    @include media(1350px) {
+      transform: translate(-500px, 40px);      
     }
   }
 
@@ -332,9 +340,16 @@
     @include media(desktop-up){
       width: 80px;
       height: 80px;
-      top: 46%;
-      left: 25%;
-      transform: translate(-230%, 140%);
+      top: 280px;
+      transform: translate(-450px, 140%);
+    }@include media(1250px) {
+      transform: translate(-470px, 130px);      
+    }
+    @include media(1300px) {
+      transform: translate(-490px, 130px);      
+    }
+    @include media(1350px) {
+      transform: translate(-500px, 150px);      
     }
   }
   &.tb--3 {
@@ -346,9 +361,16 @@
     @include media(desktop-up){
       width: 80px;
       height: 80px;
-      top: 46%;
-      left: 25%;
-      transform: translate(-230%, 280%);
+      top: 280px;
+      transform: translate(-450px, 280%);
+    }@include media(1250px) {
+      transform: translate(-470px, 240px);      
+    }
+    @include media(1300px) {
+      transform: translate(-490px, 240px);      
+    }
+    @include media(1350px) {
+      transform: translate(-500px, 260px);      
     }
   }
 }

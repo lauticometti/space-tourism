@@ -8727,8 +8727,7 @@ h2, .h2, h3, .h3, h4, .h4 {
       top: 32rem; } }
   @media (min-width: 1200px) {
     .rounded-ghost-btn {
-      top: 25rem;
-      left: 15%; } }
+      top: 25rem; } }
   .rounded-ghost-btn.tb--1 {
     transform: translate(-230%); }
     .rounded-ghost-btn.tb--1::after, .rounded-ghost-btn.tb--2::after, .rounded-ghost-btn.tb--3::after {
@@ -8747,8 +8746,17 @@ h2, .h2, h3, .h3, h4, .h4 {
       .rounded-ghost-btn.tb--1 {
         width: 80px;
         height: 80px;
-        top: 46%;
-        left: 25%; } }
+        top: 280px;
+        transform: translate(-450px, 0%); } }
+    @media (min-width: 1250px) {
+      .rounded-ghost-btn.tb--1 {
+        transform: translate(-470px, 20px); } }
+    @media (min-width: 1300px) {
+      .rounded-ghost-btn.tb--1 {
+        transform: translate(-490px, 20px); } }
+    @media (min-width: 1350px) {
+      .rounded-ghost-btn.tb--1 {
+        transform: translate(-500px, 40px); } }
   .rounded-ghost-btn.tb--2 {
     transform: translate(-50%); }
     .rounded-ghost-btn.tb--2::after {
@@ -8757,9 +8765,17 @@ h2, .h2, h3, .h3, h4, .h4 {
       .rounded-ghost-btn.tb--2 {
         width: 80px;
         height: 80px;
-        top: 46%;
-        left: 25%;
-        transform: translate(-230%, 140%); } }
+        top: 280px;
+        transform: translate(-450px, 140%); } }
+    @media (min-width: 1250px) {
+      .rounded-ghost-btn.tb--2 {
+        transform: translate(-470px, 130px); } }
+    @media (min-width: 1300px) {
+      .rounded-ghost-btn.tb--2 {
+        transform: translate(-490px, 130px); } }
+    @media (min-width: 1350px) {
+      .rounded-ghost-btn.tb--2 {
+        transform: translate(-500px, 150px); } }
   .rounded-ghost-btn.tb--3 {
     transform: translate(130%); }
     .rounded-ghost-btn.tb--3::after {
@@ -8768,9 +8784,17 @@ h2, .h2, h3, .h3, h4, .h4 {
       .rounded-ghost-btn.tb--3 {
         width: 80px;
         height: 80px;
-        top: 46%;
-        left: 25%;
-        transform: translate(-230%, 280%); } }
+        top: 280px;
+        transform: translate(-450px, 280%); } }
+    @media (min-width: 1250px) {
+      .rounded-ghost-btn.tb--3 {
+        transform: translate(-470px, 240px); } }
+    @media (min-width: 1300px) {
+      .rounded-ghost-btn.tb--3 {
+        transform: translate(-490px, 240px); } }
+    @media (min-width: 1350px) {
+      .rounded-ghost-btn.tb--3 {
+        transform: translate(-500px, 260px); } }
 
 .navbar {
   font-family: "Barlow Condensed", sans-serif;
