@@ -1,3 +1,6 @@
+/* General styles, titles, subtitles and details of all pages */
+
+/* Styles of first heading present in every page, who guides to users in the site */
 .step-name {
   font-family: "Barlow Condensed";
   font-size: 1rem;
@@ -12,11 +15,25 @@
   &--tech {
     margin-bottom: 2rem;
   }
+  &-arrow--right {
+    margin-left: 10%;
+  }
+  &-arrow--left {
+    margin-right: 10%;
+  }
 
   @include media(big-phone-up) {
     letter-spacing: 3.5px;
-    text-align: start;
+    text-align: center;
     padding-left: 40px;
+  }
+
+  @include media(tablet-up) {
+    text-align: start;
+    &-arrow--right,
+    &-arrow--left {
+      display: none;
+    }
   }
 
   @include media(desktop-up) {
@@ -33,8 +50,7 @@
   }
 }
 
-/* HOME */
-
+/* Home styles */
 .title__container {
   @include flex-col($align: center);
   margin: 0 auto 25px;
@@ -68,7 +84,7 @@
   }
 }
 
-/* DESTINATION STYLES */
+/* Destination styles */
 
 .main--destination {
   position: relative;
@@ -140,7 +156,7 @@
   }
 }
 
-/* CREW STYLES */
+/* Crew styles */
 
 .main--crew {
   position: relative;
@@ -178,6 +194,7 @@
     object-fit: contain;
     @include size(100%, 100%);
   }
+  /* After creates a line under photo__container */
   &::after {
     content: "";
     position: absolute;
@@ -290,19 +307,16 @@
   }
 
   &__input {
-    position: relative;
-
     width: 100%;
     min-height: 3rem;
     background-color: rgba($color: #121212, $alpha: 0.5);
     border: 1px solid rgba($color: #f2f2f2, $alpha: 0.1);
     border-radius: 0.5rem;
     padding: 0.8rem;
-    
+
     color: $white;
     font-size: 1rem;
     transition: 0.2s;
-    
 
     &--name {
       grid-area: input-1;
@@ -322,7 +336,7 @@
       border-color: rgba($color: #f2f2f2, $alpha: 0.7);
     }
     &::placeholder {
-      color: rgba($color: #f2f2f2, $alpha: .9);
+      color: rgba($color: #f2f2f2, $alpha: 0.9);
     }
   }
 

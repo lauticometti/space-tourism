@@ -1,3 +1,5 @@
+/* description module just gives styles to the descriptions (center text) of each page. */
+
 .description {
   @include flex-col($align: center);
   // color: $white;

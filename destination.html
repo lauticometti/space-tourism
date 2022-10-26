@@ -5,21 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/favicon-32x32.png"
-    />
+    <!-- FAVICONS -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicons/favicon-16x16.png" />
+    <link rel="manifest" href="./assets/favicons/site.webmanifest" />
+    <link rel="mask-icon" href="./assets/favicons/safari-pinned-tab.svg" color="#727272" />
+    <meta name="apple-mobile-web-app-title" content="xTourism" />
+    <meta name="application-name" content="xTourism" />
+    <meta name="msapplication-TileColor" content="#603cba" />
+    <meta name="msapplication-TileImage" content="./assets/favicons/mstile-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
 
-    <!-- CSS only -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
-      crossorigin="anonymous"
-    />
-
+    <!-- CSS -->
     <link rel="stylesheet" href="./css/main.css" />
 
     <title>
@@ -31,15 +29,18 @@
     />
   </head>
   <body class="body body--destination">
+    <!-- Bootstrap responsive menu. -->
     <header>
       <nav class="navbar navbar-expand-md">
         <div class="container-fluid">
+          <!-- Logo -->
           <a class="navbar-brand" href="./index.html"
             ><img
               class="logo"
               src="./assets/shared/logo.svg"
               alt="White circle icon with four pointed star inside"
           /></a>
+          <!-- Hamburguer Button -->
           <button
             class="navbar-toggler"
             type="button"
@@ -52,12 +53,14 @@
               alt="Hamburguer Icon for responsive menu"
             />
           </button>
+          <!-- OffCanvas -->
           <div
             class="offcanvas offcanvas-end"
             tabindex="-1"
             id="offcanvasNavbar"
             aria-labelledby="offcanvasNavbarLabel"
           >
+            <!-- OffCanvas header -->
             <div class="offcanvas-header justify-content-end">
               <button
                 class="close-btn"
@@ -72,7 +75,9 @@
                 />
               </button>
             </div>
+            <!-- OffCanvas body -->
             <div class="offcanvas-body justify-content-end">
+              <!-- Navbar -->
               <ul class="navbar-nav">
                 <li class="nav-item">
                   <a class="nav-link" href="./index.html"
@@ -110,8 +115,19 @@
     </header>
 
     <main class="main--destination">
-      <h3 class="step-name"><span class="step-name-span">01</span>Pick your destination</h3>
+      <!-- step-name is my nomenclature for the titles of each page, which have one left span with a number. -->
+      <h3 class="step-name">
+        <a href="./index.html" class="step-name-arrow--left"
+          ><i class="bi bi-arrow-left-circle"></i
+        ></a>
+        <span class="step-name-span">01</span>
+        Pick your destination
+        <a href="./crew.html" class="step-name-arrow--right"
+          ><i class="bi bi-arrow-right-circle"></i
+        ></a>
+      </h3>
 
+      <!-- Slider buttons -->
       <input
         class="rectangle-btn rect--1"
         type="radio"
@@ -122,9 +138,9 @@
       <input class="rectangle-btn rect--3" type="radio" name="slider-btn" />
       <input class="rectangle-btn rect--4" type="radio" name="slider-btn" />
 
-      <!-- SECTIONS DE LOS CUATRO DESTINOS. -->
+      <!-- Four destinations sections. -->
 
-      <!-- DESTINO 1 - MOON -->
+      <!-- Destination 1 - MOON -->
       <section id="destination-1" class="destination__section row">
         <div class="planet__container">
           <img src="./assets/destination/image-moon.webp" alt="The Full Moon" />
@@ -132,20 +148,23 @@
 
         <div class="description col-12 col-xl-6">
           <h3 class="description-title">MOON</h3>
-          
+
           <div class="description-cta">
             <a class="description-cta--anchor" href="./contact.html">
               <span class="description-cta--text">Go Moon</span>
             </a>
           </div>
-          
+
           <p class="description-p">
             See our planet as you&#8217;ve never seen it before. A perfect
             relaxing trip away to help regain perspective and come back
             refreshed. While you&#8217;re there, take in some history by
             visiting the Luna 2 and Apollo 11 landing sites.
           </p>
+
+          <!-- Decoration line -->
           <div class="line"></div>
+
           <div class="features">
             <div class="distance">
               <h5 class="features-title">Avg. distance</h5>
@@ -180,7 +199,9 @@
             to tackle Olympus Mons, the tallest planetary mountain in our solar
             system. It&#8217;s two and a half times the size of Everest!
           </p>
+          <!-- Decoration line -->
           <div class="line"></div>
+
           <div class="features">
             <div class="distance">
               <h5 class="features-title">Avg. distance</h5>
@@ -216,7 +237,10 @@
             perfect for a bit of ice skating, curling, hockey, or simple
             relaxation in your snug wintery cabin.
           </p>
+
+          <!-- Decoration line -->
           <div class="line"></div>
+
           <div class="features">
             <div class="distance">
               <h5 class="features-title">Avg. distance</h5>
@@ -251,7 +275,10 @@
             Titan is a home away from home (just a few hundred degrees colder!).
             As a bonus, you get striking views of the Rings of Saturn.
           </p>
+
+          <!-- Decoration line -->
           <div class="line"></div>
+
           <div class="features">
             <div class="distance">
               <h5 class="features-title">Avg. distance</h5>

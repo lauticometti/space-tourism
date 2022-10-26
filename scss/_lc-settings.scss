@@ -1,3 +1,6 @@
+/* The settings module is in charge of establishing common styles in all the pages */
+
+/* Backgrounds */
 .body {
   background-color: $main;
   background-size: cover;
@@ -59,6 +62,7 @@
   }
 }
 
+/* Dark brightness filter for contact page */
 .html--contact {
   position: relative;
   &::before {

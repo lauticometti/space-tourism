@@ -8388,6 +8388,8 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important; } }
 
+/* The settings module is in charge of establishing common styles in all the pages */
+/* Backgrounds */
 .body {
   background-color: #0b0d17;
   background-size: cover;
@@ -8438,6 +8440,7 @@ textarea.form-control-lg {
     background-size: auto;
     background-repeat: repeat; }
 
+/* Dark brightness filter for contact page */
 .html--contact {
   position: relative; }
   .html--contact::before {
@@ -8809,7 +8812,7 @@ h2, .h2, h3, .h3, h4, .h4 {
   box-shadow: 4px 4px 8px #1b1f32, -4px -4px 8px #151828, 15px 15px 30px #1f2029, -15px -15px 30px #15161e;
   border: 1px solid rgba(255, 255, 255, 0.8);
   border-radius: 0.5rem;
-  transition: .5s; }
+  transition: 0.5s; }
   .description-cta:hover {
     box-shadow: 0px 0px 40px 8px #1d2030; }
   .description-cta--anchor {
@@ -8831,6 +8834,7 @@ h2, .h2, h3, .h3, h4, .h4 {
       color: #fff;
       background: linear-gradient(145deg, #090a11, #0c0d18); }
 
+/* Navbar module just gives styles to navbar (?  */
 .navbar {
   font-family: "Barlow Condensed", sans-serif;
   font-size: 16px;
@@ -8860,6 +8864,7 @@ h2, .h2, h3, .h3, h4, .h4 {
     .navbar .offcanvas-backdrop {
       background-color: transparent; }
 
+/* Animation for logo */
 @keyframes rotating {
   0% {
     transform: rotate(0deg) translate(5px) rotate(0deg); }
@@ -8923,7 +8928,8 @@ h2, .h2, h3, .h3, h4, .h4 {
     width: 72%;
     max-width: 900px;
     background-color: rgba(70, 70, 70, 0.2);
-    backdrop-filter: blur(10px); }
+    backdrop-filter: blur(10px);
+    /* After creates a line in the navbar */ }
     .navbar-nav::after {
       --width: 35%;
       content: "";
@@ -8938,57 +8944,86 @@ h2, .h2, h3, .h3, h4, .h4 {
 
 /* --- INPUT IN CHECKED ACTIVE DISPLAY FLEX ON HER SECTION --- */
 /* --- FIRST CHECKED --- */
-.oval.sb-1:checked ~ #crew-1, .rect--1:checked ~ #destination-1, .tb--1:checked ~ #tech-1 {
+.oval.sb-1:checked ~ #crew-1,
+.rect--1:checked ~ #destination-1,
+.tb--1:checked ~ #tech-1 {
   display: flex; }
 
-.oval.sb-1:checked ~ #crew-2, .rect--1:checked ~ #destination-2, .tb--1:checked ~ #tech-2 {
+.oval.sb-1:checked ~ #crew-2,
+.rect--1:checked ~ #destination-2,
+.tb--1:checked ~ #tech-2 {
   display: none; }
 
-.oval.sb-1:checked ~ #crew-3, .rect--1:checked ~ #destination-3, .tb--1:checked ~ #tech-3 {
+.oval.sb-1:checked ~ #crew-3,
+.rect--1:checked ~ #destination-3,
+.tb--1:checked ~ #tech-3 {
   display: none; }
 
-.oval.sb-1:checked ~ #crew-4, .rect--1:checked ~ #destination-4, .tb--1:checked ~ #tech-4 {
+.oval.sb-1:checked ~ #crew-4,
+.rect--1:checked ~ #destination-4,
+.tb--1:checked ~ #tech-4 {
   display: none; }
 
 /* --- SECOND CHECK --- */
-.oval.sb-2:checked ~ #crew-1, .rect--2:checked ~ #destination-1, .tb--2:checked ~ #tech-1 {
+.oval.sb-2:checked ~ #crew-1,
+.rect--2:checked ~ #destination-1,
+.tb--2:checked ~ #tech-1 {
   display: none; }
 
-.oval.sb-2:checked ~ #crew-2, .rect--2:checked ~ #destination-2, .tb--2:checked ~ #tech-2 {
+.oval.sb-2:checked ~ #crew-2,
+.rect--2:checked ~ #destination-2,
+.tb--2:checked ~ #tech-2 {
   display: flex; }
 
-.oval.sb-2:checked ~ #crew-3, .rect--2:checked ~ #destination-3, .tb--2:checked ~ #tech-3 {
+.oval.sb-2:checked ~ #crew-3,
+.rect--2:checked ~ #destination-3,
+.tb--2:checked ~ #tech-3 {
   display: none; }
 
-.oval.sb-2:checked ~ #crew-4, .rect--2:checked ~ #destination-4, .tb--2:checked ~ #tech-4 {
+.oval.sb-2:checked ~ #crew-4,
+.rect--2:checked ~ #destination-4,
+.tb--2:checked ~ #tech-4 {
   display: none; }
 
 /* --- THIRD CHECK --- */
-.oval.sb-3:checked ~ #crew-1, .rect--3:checked ~ #destination-1, .tb--3:checked ~ #tech-1 {
+.oval.sb-3:checked ~ #crew-1,
+.rect--3:checked ~ #destination-1,
+.tb--3:checked ~ #tech-1 {
   display: none; }
 
-.oval.sb-3:checked ~ #crew-2, .rect--3:checked ~ #destination-2, .tb--3:checked ~ #tech-2 {
+.oval.sb-3:checked ~ #crew-2,
+.rect--3:checked ~ #destination-2,
+.tb--3:checked ~ #tech-2 {
   display: none; }
 
-.oval.sb-3:checked ~ #crew-3, .rect--3:checked ~ #destination-3, .tb--3:checked ~ #tech-3 {
+.oval.sb-3:checked ~ #crew-3,
+.rect--3:checked ~ #destination-3,
+.tb--3:checked ~ #tech-3 {
   display: flex; }
 
-.oval.sb-3:checked ~ #crew-4, .rect--3:checked ~ #destination-4, .tb--3:checked ~ #tech-4 {
+.oval.sb-3:checked ~ #crew-4,
+.rect--3:checked ~ #destination-4,
+.tb--3:checked ~ #tech-4 {
   display: none; }
 
 /* --- FOURTH CHECK --- */
-.oval.sb-4:checked ~ #crew-1, .rect--4:checked ~ #destination-1 {
+.oval.sb-4:checked ~ #crew-1,
+.rect--4:checked ~ #destination-1 {
   display: none; }
 
-.oval.sb-4:checked ~ #crew-2, .rect--4:checked ~ #destination-2 {
+.oval.sb-4:checked ~ #crew-2,
+.rect--4:checked ~ #destination-2 {
   display: none; }
 
-.oval.sb-4:checked ~ #crew-3, .rect--4:checked ~ #destination-3 {
+.oval.sb-4:checked ~ #crew-3,
+.rect--4:checked ~ #destination-3 {
   display: none; }
 
-.oval.sb-4:checked ~ #crew-4, .rect--4:checked ~ #destination-4 {
+.oval.sb-4:checked ~ #crew-4,
+.rect--4:checked ~ #destination-4 {
   display: flex; }
 
+/* description module just gives styles to the descriptions (center text) of each page. */
 .description {
   display: flex;
   flex-direction: column;
@@ -9116,6 +9151,8 @@ h2, .h2, h3, .h3, h4, .h4 {
           font-size: 18px;
           line-height: 32px; } }
 
+/* General styles, titles, subtitles and details of all pages */
+/* Styles of first heading present in every page, who guides to users in the site */
 .step-name {
   font-family: "Barlow Condensed";
   font-size: 1rem;
@@ -9128,11 +9165,20 @@ h2, .h2, h3, .h3, h4, .h4 {
     padding-right: 0.5rem; }
   .step-name--tech {
     margin-bottom: 2rem; }
+  .step-name-arrow--right {
+    margin-left: 10%; }
+  .step-name-arrow--left {
+    margin-right: 10%; }
   @media (min-width: 576px) {
     .step-name {
       letter-spacing: 3.5px;
-      text-align: start;
+      text-align: center;
       padding-left: 40px; } }
+  @media (min-width: 768px) {
+    .step-name {
+      text-align: start; }
+      .step-name-arrow--right, .step-name-arrow--left {
+        display: none; } }
   @media (min-width: 1200px) {
     .step-name {
       font-size: 1.75rem;
@@ -9144,7 +9190,7 @@ h2, .h2, h3, .h3, h4, .h4 {
       .step-name--tech {
         margin-bottom: 1px; } }
 
-/* HOME */
+/* Home styles */
 .title__container {
   display: flex;
   flex-direction: column;
@@ -9173,7 +9219,7 @@ h2, .h2, h3, .h3, h4, .h4 {
       line-height: 28px;
       margin: auto 15%; } }
 
-/* DESTINATION STYLES */
+/* Destination styles */
 .main--destination {
   position: relative; }
 
@@ -9232,7 +9278,7 @@ h2, .h2, h3, .h3, h4, .h4 {
       .features-data {
         font-size: 1.75rem; } }
 
-/* CREW STYLES */
+/* Crew styles */
 .main--crew {
   position: relative; }
 
@@ -9263,7 +9309,8 @@ h2, .h2, h3, .h3, h4, .h4 {
   position: relative;
   width: 327px;
   height: 223px;
-  margin: 8px auto 0; }
+  margin: 8px auto 0;
+  /* After creates a line under photo__container */ }
   .photo__container-img {
     object-fit: contain;
     width: 100%;
@@ -9360,7 +9407,6 @@ h2, .h2, h3, .h3, h4, .h4 {
       .form__container {
         grid-template: "input-1 submit" 48px "input-2 submit" 48px "text-area submit" 96px / 3fr 1fr; } }
   .form__input {
-    position: relative;
     width: 100%;
     min-height: 3rem;
     background-color: rgba(18, 18, 18, 0.5);

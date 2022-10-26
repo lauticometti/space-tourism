@@ -4,35 +4,41 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/favicon-32x32.png"
-    />
+    
+    <!-- FAVICONS -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicons/favicon-16x16.png" />
+    <link rel="manifest" href="./assets/favicons/site.webmanifest" />
+    <link rel="mask-icon" href="./assets/favicons/safari-pinned-tab.svg" color="#727272" />
+    <meta name="apple-mobile-web-app-title" content="xTourism" />
+    <meta name="application-name" content="xTourism" />
+    <meta name="msapplication-TileColor" content="#603cba" />
+    <meta name="msapplication-TileImage" content="./assets/favicons/mstile-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
 
-    <!-- CSS only -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
-      crossorigin="anonymous"
-    />
-
+    <!-- CSS -->
     <link rel="stylesheet" href="./css/main.css" />
 
     <title>Space Tourism | About us</title>
+    <meta
+      name="description"
+      content="Contact us and let's handle your next space trip with your best friends. Just choose a destination and send us an email, the rest is our work"
+    />
   </head>
   <body class="body body--contact">
+    <!-- Bootstrap responsive menu. -->
     <header>
       <nav class="navbar navbar-expand-md">
         <div class="container-fluid">
+          <!-- Logo -->
           <a class="navbar-brand" href="./index.html"
             ><img
               class="logo"
               src="./assets/shared/logo.svg"
               alt="White circle icon with four pointed star inside"
           /></a>
+          <!-- Hamburguer Button -->
           <button
             class="hamburguer-btn navbar-toggler"
             type="button"
@@ -46,12 +52,14 @@
               alt="Hamburguer Icon for responsive menu"
             />
           </button>
+          <!-- OffCanvas -->
           <div
             class="offcanvas offcanvas-end"
             tabindex="-1"
             id="offcanvasNavbar"
             aria-labelledby="offcanvasNavbarLabel"
           >
+            <!-- OffCanvas header -->
             <div class="offcanvas-header justify-content-end">
               <button
                 class="close-btn"
@@ -66,7 +74,9 @@
                 />
               </button>
             </div>
+            <!-- OffCanvas body -->
             <div class="offcanvas-body justify-content-end">
+              <!-- Navbar -->
               <ul class="navbar-nav">
                 <li class="nav-item">
                   <a class="nav-link" href="./index.html"
@@ -104,6 +114,7 @@
     </header>
 
     <main class="main--contact">
+      <!-- Contact form powered by Formspree, who transforms my form into a functional form  -->
       <form class="form" action="https://formspree.io/f/mrgdawzg" method="POST">
         <h2 class="form__title">Get that experience!</h2>
         <h3 class="form__subtitle">
@@ -163,7 +174,7 @@
         >
       </div>
     </main>
-    
+
     <footer class="footer">
       <a href="./index.html" class="footer__anchor">Back home</a>
     </footer>

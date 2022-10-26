@@ -2,7 +2,9 @@
 
 /* --- FIRST CHECKED --- */
 
-.oval.sb-1:checked ~ #crew, .rect--1:checked ~ #destination, .tb--1:checked ~ #tech {
+.oval.sb-1:checked ~ #crew,
+.rect--1:checked ~ #destination,
+.tb--1:checked ~ #tech {
   &-1 {
     display: flex;
   }
@@ -19,7 +21,9 @@
 
 /* --- SECOND CHECK --- */
 
-.oval.sb-2:checked ~ #crew, .rect--2:checked ~ #destination, .tb--2:checked ~ #tech {
+.oval.sb-2:checked ~ #crew,
+.rect--2:checked ~ #destination,
+.tb--2:checked ~ #tech {
   &-1 {
     display: none;
   }
@@ -36,7 +40,9 @@
 
 /* --- THIRD CHECK --- */
 
-.oval.sb-3:checked ~ #crew, .rect--3:checked ~ #destination, .tb--3:checked ~ #tech {
+.oval.sb-3:checked ~ #crew,
+.rect--3:checked ~ #destination,
+.tb--3:checked ~ #tech {
   &-1 {
     display: none;
   }
@@ -53,7 +59,8 @@
 
 /* --- FOURTH CHECK --- */
 
-.oval.sb-4:checked ~ #crew, .rect--4:checked ~ #destination {
+.oval.sb-4:checked ~ #crew,
+.rect--4:checked ~ #destination {
   &-1 {
     display: none;
   }

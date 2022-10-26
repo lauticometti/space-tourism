@@ -1,3 +1,5 @@
+/* Navbar module just gives styles to navbar (?  */
+
 .navbar {
   font-family: "Barlow Condensed", sans-serif;
   font-size: 16px;
@@ -34,6 +36,7 @@
   }
 }
 
+/* Animation for logo */
 @keyframes rotating {
   0% {
     transform: rotate(0deg) translate(5px) rotate(0deg);
@@ -52,7 +55,8 @@
   padding: 0;
   color: $alt;
   width: fit-content;
-  border-bottom: 1px solid rgba($color: $white, $alpha: 0);
+
+  border-bottom: 1px solid rgba($color: $white, $alpha: 0); //border alpha 0 for turn into alpha 0.5 in hover
   &:hover {
     color: $white;
     border-bottom: 1px solid rgba($color: $white, $alpha: 0.5);
@@ -121,6 +125,8 @@
       max-width: 900px;
       background-color: $template-glass-1;
       backdrop-filter: blur(10px);
+
+      /* After creates a line in the navbar */
       &::after {
         --width: 35%;
         content: "";

@@ -5,12 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/favicon-32x32.png"
-    />
+    <!-- FAVICONS -->    
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicons/favicon-16x16.png" />
+    <link rel="manifest" href="./assets/favicons/site.webmanifest" />
+    <link rel="mask-icon" href="./assets/favicons/safari-pinned-tab.svg" color="#727272" />
+    <meta name="apple-mobile-web-app-title" content="xTourism" />
+    <meta name="application-name" content="xTourism" />
+    <meta name="msapplication-TileColor" content="#603cba" />
+    <meta name="msapplication-TileImage" content="./assets/favicons/mstile-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
 
     <!-- CSS -->
     <link rel="stylesheet" href="./css/main.css" />
@@ -22,15 +27,19 @@
     />
   </head>
   <body class="body body--home">
+    <!-- Bootstrap responsive menu. -->
     <header>
       <nav class="navbar navbar-expand-md">
         <div class="container-fluid">
-          <a class="navbar-brand" href="./index.html"
-            ><img
+          <!-- Logo -->
+          <a class="navbar-brand" href="./index.html">
+            <img
               class="logo"
               src="./assets/shared/logo.svg"
               alt="White circle icon with four pointed star inside"
-          /></a>
+            />
+          </a>
+          <!-- Hamburguer Button -->
           <button
             class="hamburguer-btn navbar-toggler"
             type="button"
@@ -44,13 +53,16 @@
               alt="Hamburguer Icon for responsive menu"
             />
           </button>
+          <!-- OffCanvas -->
           <div
             class="offcanvas offcanvas-end"
             tabindex="-1"
             id="offcanvasNavbar"
             aria-labelledby="offcanvasNavbarLabel"
           >
+            <!-- OffCanvas header -->
             <div class="offcanvas-header justify-content-end">
+              <!-- Close button -->
               <button
                 class="close-btn"
                 type="button"
@@ -64,7 +76,9 @@
                 />
               </button>
             </div>
+            <!-- OffCanvas body -->
             <div class="offcanvas-body justify-content-end">
+              <!-- Navbar -->
               <ul class="navbar-nav">
                 <li class="nav-item">
                   <a
@@ -102,6 +116,7 @@
     </header>
 
     <main>
+      <!-- Home first view -->
       <div class="title__container">
         <h2 class="title__container-sup">So, you want to travel to</h2>
         <h1 class="title__container-title">Space</h1>
@@ -112,13 +127,14 @@
           this world experience!
         </p>
       </div>
-      
+
+      <!-- Home big circle button -->
       <div class="explore__container">
         <a class="explore__container-btn" href="./destination.html">
           <span class="explore__container-text">Explore</span>
         </a>
       </div>
-    </main>    
+    </main>
 
     <!-- JavaScript Bundle with Popper -->
     <script
