@@ -17,9 +17,19 @@
   }
   &-arrow--right {
     margin-left: 10%;
+    font-size: 1.3rem;
+    transition: .2s;
+    &:hover {
+      color: rgba($color: #b1b1b1, $alpha: .9);
+    }
   }
   &-arrow--left {
     margin-right: 10%;
+    font-size: 1.3rem;
+    transition: .2s;
+    &:hover {
+      color: rgba($color: #b1b1b1, $alpha: .9);
+    }
   }
 
   @include media(big-phone-up) {

@@ -1,10 +1,10 @@
+@import url(../node_modules/bootstrap-icons/font/bootstrap-icons.css);
 /*!
    * Bootstrap  v5.2.2 (https://getbootstrap.com/)
    * Copyright 2011-2022 The Bootstrap Authors
    * Copyright 2011-2022 Twitter, Inc.
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    */
-@import url(../node_modules/bootstrap-icons/font/bootstrap-icons.css);
 @import "https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap";
 :root {
   --bs-blue: #0d6efd;
@@ -9166,9 +9166,17 @@ h2, .h2, h3, .h3, h4, .h4 {
   .step-name--tech {
     margin-bottom: 2rem; }
   .step-name-arrow--right {
-    margin-left: 10%; }
+    margin-left: 10%;
+    font-size: 1.3rem;
+    transition: .2s; }
+    .step-name-arrow--right:hover {
+      color: rgba(177, 177, 177, 0.9); }
   .step-name-arrow--left {
-    margin-right: 10%; }
+    margin-right: 10%;
+    font-size: 1.3rem;
+    transition: .2s; }
+    .step-name-arrow--left:hover {
+      color: rgba(177, 177, 177, 0.9); }
   @media (min-width: 576px) {
     .step-name {
       letter-spacing: 3.5px;
