@@ -259,25 +259,27 @@
 /* CONTACT */
 .main--contact {
   padding: 1rem 4rem;
-  @include flex-col(initial, initial);
-  gap: 5rem;
-  @include media(desktop-up) {
-    padding: 1rem 10rem;
-    flex-direction: row;
-    justify-content: flex-start;
+  @include flex-col(initial, initial); 
+  gap: 30px;
+  @include media(big-tablet-up) {
+    display: grid;
+    grid-template: 
+    "form vector" 420px
+    "map map" 700px / 1fr 1fr;
+    gap: 110px 0px;
   }
 }
 
 .form {
+  grid-area: form;
   text-align: justify;
   color: $white;
   max-width: 500px;
+  
   @include media(tablet-up) {
     max-width: 95%;
   }
-  @include media(desktop-up) {
-    width: 50%;
-  }
+
   &__title {
     font-family: "Barlow Condensed";
     text-transform: uppercase;
@@ -298,7 +300,7 @@
       "submit" 48px / 1fr;
     gap: 1.2rem;
     margin: 2rem auto 0;
-    @include media-minmax(768px, 1200px) {
+    @include media-minmax(768px, 900px) {
       grid-template:
         "input-1 submit" 48px
         "input-2 submit" 48px
@@ -357,7 +359,7 @@
       outline: none;
       border-color: rgba($color: #121212, $alpha: 0.7);
     }
-    @include media-minmax(768px, 1200px) {
+    @include media-minmax(768px, 900px) {
       width: 100px;
       height: 50%;
       justify-self: flex-end;
@@ -366,12 +368,34 @@
   }
 }
 
+.rocket__container {
+  grid-area: vector;
+  @include flex-row(center, center);
+  &-img {
+    display: none;
+    animation: flighting 1.5s  linear infinite alternate both;
+    @include media(big-tablet-up) {
+      display: block;
+      width: 90%;
+      height: 90%;
+    }
+  }
+}
+
+@keyframes flighting {
+  from {
+    translate: -10px 10px;
+  }
+} 
+
 .contact {
+  grid-area: map;
   color: $white;
   font-size: 20px;
   font-family: "Bellefair";
-  @include media(desktop-up) {
-    width: 50%;
+
+  @include media(big-tablet-up) {
+    @include flex-col(center, center);
   }
 
   &__title {
