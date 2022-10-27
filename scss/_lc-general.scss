@@ -345,9 +345,11 @@
   &__cta {
     grid-area: submit;
     align-self: start;
-    width: 35%;
+    width: fit-content;
+    padding: .5rem;
+    
     min-height: 3rem;
-    background-color: rgba($color: #fff, $alpha: 0.75);
+    background-color: rgba($color: #fff, $alpha: 0.95);
     border-radius: 0.5rem;
     border: 1px solid rgba($color: #fff, $alpha: 0.95);
     font-size: 1.1rem;
@@ -355,13 +357,18 @@
     letter-spacing: 0.9px;
     text-transform: uppercase;
     color: $black;
+    transition: .2s;
+    &:hover {
+      background-color: rgba($color: #333, $alpha: .5);
+      color: rgba($color: #fff, $alpha: 1);
+    }
     &:focus {
       outline: none;
       border-color: rgba($color: #121212, $alpha: 0.7);
     }
     @include media-minmax(768px, 900px) {
-      width: 100px;
-      height: 50%;
+      width: fit-content;
+      height: 35%;
       justify-self: flex-end;
       align-self: center;
     }

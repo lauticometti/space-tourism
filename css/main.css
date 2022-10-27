@@ -9429,23 +9429,28 @@ h2, .h2, h3, .h3, h4, .h4 {
   .form__cta {
     grid-area: submit;
     align-self: start;
-    width: 35%;
+    width: fit-content;
+    padding: .5rem;
     min-height: 3rem;
-    background-color: rgba(255, 255, 255, 0.75);
+    background-color: rgba(255, 255, 255, 0.95);
     border-radius: 0.5rem;
     border: 1px solid rgba(255, 255, 255, 0.95);
     font-size: 1.1rem;
     font-weight: bold;
     letter-spacing: 0.9px;
     text-transform: uppercase;
-    color: #000; }
+    color: #000;
+    transition: .2s; }
+    .form__cta:hover {
+      background-color: rgba(51, 51, 51, 0.5);
+      color: white; }
     .form__cta:focus {
       outline: none;
       border-color: rgba(18, 18, 18, 0.7); }
     @media screen and (min-width: 768px) and (max-width: 900px) {
       .form__cta {
-        width: 100px;
-        height: 50%;
+        width: fit-content;
+        height: 35%;
         justify-self: flex-end;
         align-self: center; } }
 
