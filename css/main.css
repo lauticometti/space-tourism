@@ -9167,16 +9167,16 @@ h2, .h2, h3, .h3, h4, .h4 {
     margin-bottom: 2rem; }
   .step-name-arrow--right {
     margin-left: 10%;
-    font-size: 1.3rem;
     transition: .2s; }
     .step-name-arrow--right:hover {
-      color: rgba(177, 177, 177, 0.9); }
+      fill: rgba(177, 177, 177, 0.9); }
   .step-name-arrow--left {
     margin-right: 10%;
-    font-size: 1.3rem;
     transition: .2s; }
-    .step-name-arrow--left:hover {
-      color: rgba(177, 177, 177, 0.9); }
+    .step-name-arrow--left img {
+      color: white; }
+      .step-name-arrow--left img:hover {
+        fill: rgba(177, 177, 177, 0.9); }
   @media (min-width: 576px) {
     .step-name {
       letter-spacing: 3.5px;
