@@ -53,7 +53,7 @@
       @content;
     }
   } @else if $size == big-desktop-up {
-    @media (min-width: 1600px) {
+    @media (min-width: 1500px) {
       @content;
     }
   } @else {

@@ -2,8 +2,8 @@
 
 /* Styles of first heading present in every page, who guides to users in the site */
 .step-name {
-  font-family: "Barlow Condensed";
-  font-size: 1rem;
+  font-family: $font-3;
+  font-size: $h3-size;
   letter-spacing: 2.7px;
   text-transform: uppercase;
   text-align: center;
@@ -16,18 +16,28 @@
     margin-bottom: 2rem;
   }
   &-arrow--right {
-    margin-left: 10%;    
+    @include media-max(330px) {
+      display: none;
+    }
+    margin-left: 3%;    
   }
   &-arrow--left {
-    margin-right: 10%;   
-  }
-    
+    @include media-max(330px) {
+      display: none;
+    }
+    margin-right: 3%;   
   }
 
   @include media(big-phone-up) {
     letter-spacing: 3.5px;
     text-align: center;
     padding-left: 40px;
+    &-arrow--right {
+      margin-left: 10%;
+    }
+    &-arrow--left {
+      margin-right: 10%;
+    }
   }
 
   @include media(tablet-up) {
@@ -39,7 +49,7 @@
   }
 
   @include media(desktop-up) {
-    font-size: 1.75rem;
+    font-size: $h3-size-xl;
     letter-spacing: 4.72px;
     padding-left: 10rem;
     margin: 5rem 0 4rem;
@@ -52,39 +62,75 @@
   }
 }
 
+/* ---- */
+
 /* Home styles */
 .title__container {
   @include flex-col($align: center);
   margin: 0 auto 25px;
   width: 75%;
   &-sup {
-    font-family: "Barlow Condensed";
-    font-size: 1rem;
+    font-family: $font-3;
+    font-size: $h3-size;
     letter-spacing: 2.7px;
     text-transform: uppercase;
     text-align: center;
   }
+
+  &-title {
+    font-size: $main-title-size;
+  }
+
   &-p {
-    font-size: 15px;
-    font-family: "Barlow";
+    font-size: $paragraph-size;
+    font-family: $font-2;
     text-align: center;
   }
 
   @include media(big-phone-up) {
     &-sup {
-      font-size: 1.25rem;
+      font-size: $h3-size-sm;
       letter-spacing: 3.38px;
     }
     &-title {
-      font-size: 9.375rem;
+      font-size: $main-title-size-sm;
     }
     &-p {
-      font-size: 1rem;
+      font-size: $paragraph-size-sm;
       line-height: 28px;
       margin: auto 15%;
     }
   }
+
+  @include media(desktop-up) {
+    &-sup {
+      font-size: $h3-size-xl;
+    }
+    &-title {
+      font-size: $main-title-size-xl;
+    }
+    &-p {
+      font-size: $paragraph-size-xl;
+    }
+  }
+
+  @include media(big-desktop-up) {
+    padding-top: 1rem;
+    &-sup {
+      font-size: $h3-size-xxl;
+      letter-spacing: 3.38px;
+    }
+    &-title {
+      font-size: $main-title-size-xxl;
+    }
+    &-p {
+      font-size: $paragraph-size-xxl;
+      margin: auto 19%;
+    }
+  }
 }
+
+/* ---- */
 
 /* Destination styles */
 
@@ -130,15 +176,15 @@
 
   &-title {
     font: {
-      family: "Barlow Condensed", sans-serif;
-      size: 14px;
+      family: $font-3, sans-serif;
+      size: $h5-size;
     }
     letter-spacing: 2.36px;
     text-transform: uppercase;
   }
   &-data {
     font: {
-      family: "Bellefair";
+      family: $font-1;
       size: 1.5rem;
       weight: normal;
     }
@@ -147,16 +193,24 @@
   }
   @include media(big-phone-up) {
     justify-content: space-evenly;
+    &-title {
+      font-size: $h5-size-sm;
+    }
   }
   @include media(desktop-up) {
     justify-content: flex-start;
     gap: 5rem;
     text-align: start;
+    &-title {
+      font-size: $h5-size-xl;
+    }
     &-data {
       font-size: 1.75rem;
     }
   }
 }
+
+/* ---- */
 
 /* Crew styles */
 
@@ -218,9 +272,15 @@
     width: 100%;
     height: 482px;
   }
+  @include media(big-desktop-up) {
+    height: 550px;
+  }
 }
 
-/* TECH STYLES */
+
+/* ---- */
+
+/* Tech styles */
 
 .tech__section {
   display: flex;
@@ -258,7 +318,9 @@
   }
 }
 
-/* CONTACT */
+/* ---- */
+
+/* Contact styles */
 .main--contact {
   padding: 1rem 4rem;
   @include flex-col(initial, initial); 
@@ -281,16 +343,34 @@
   @include media(tablet-up) {
     max-width: 95%;
   }
-
+  
   &__title {
-    font-family: "Barlow Condensed";
+    font-family: $font-3;
     text-transform: uppercase;
-    font-size: 2rem;
+    font-size: $h2-size;
+    @include media(tablet-up){
+      font-size: $h2-size-md;
+    }
+    @include media(desktop-up){
+      font-size: $h2-size-xl;
+    }
+    @include media(big-desktop-up){
+      font-size: $h2-size-xxl;
+    }
   }
-
+  
   &__subtitle {
     text-transform: uppercase;
-    font-size: 1rem;
+    font-size: $h5-size;
+    @include media(tablet-up) {
+      font-size: $h5-size-md;
+    }
+    @include media(desktop-up){
+      font-size: $h5-size-xl;
+    }
+    @include media(big-desktop-up){
+      font-size: $h5-size-xxl;
+    }
   }
 
   &__container {
@@ -308,6 +388,9 @@
         "input-2 submit" 48px
         "text-area submit" 96px / 3fr 1fr;
     }
+    @include media(big-desktop-up) {
+      gap: 1.8rem;
+    }
   }
 
   &__input {
@@ -319,7 +402,7 @@
     padding: 0.8rem;
 
     color: $white;
-    font-size: 1rem;
+    font-size: $input-text-size;
     transition: 0.2s;
 
     &--name {
@@ -341,6 +424,20 @@
     }
     &::placeholder {
       color: rgba($color: #f2f2f2, $alpha: 0.9);
+    }
+    @include media(tablet-up) {
+      font-size: $input-text-size-md;
+    }
+
+    @include media(desktop-up) {
+      font-size: $input-text-size-xl;
+      min-height: 3.5rem;
+    }
+
+    @include media (big-desktop-up) {
+      font-size: $input-text-size-xxl;
+      min-height: 4rem;
+
     }
   }
 
@@ -374,6 +471,9 @@
       justify-self: flex-end;
       align-self: center;
     }
+    @include media(big-tablet-up) {
+      padding: 1rem;
+    }
   }
 }
 
@@ -388,6 +488,10 @@
       width: 90%;
       height: 90%;
     }
+    @include media (big-desktop-up) {
+      width: 100%;
+      height: 100%;
+    }
   }
 }
 
@@ -400,11 +504,17 @@
 .contact {
   grid-area: map;
   color: $white;
-  font-size: 20px;
-  font-family: "Bellefair";
+  font-size: 1.25rem;
+  font-family: $font-1;
 
   @include media(big-tablet-up) {
     @include flex-col(center, center);
+  }
+  @include media(desktop-up){
+    font-size: 1.5rem;
+  }
+  @include media(big-desktop-up){
+    font-size: 1.8rem;
   }
 
   &__title {
@@ -458,6 +568,12 @@
     transition: 0.2s;
     &:hover {
       color: #666;
+    }
+  }
+  @include media(big-desktop-up){
+    min-height: 8rem;
+    &__anchor {
+      font-size: 5rem;
     }
   }
 }

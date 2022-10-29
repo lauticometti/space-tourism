@@ -8837,7 +8837,7 @@ h2, .h2, h3, .h3, h4, .h4 {
 /* Navbar module just gives styles to navbar (?  */
 .navbar {
   font-family: "Barlow Condensed", sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   letter-spacing: 2.7px;
   text-transform: uppercase;
   margin-bottom: 1.5rem;
@@ -8913,7 +8913,8 @@ h2, .h2, h3, .h3, h4, .h4 {
       .navbar-nav .nav-link {
         display: block;
         width: 100%;
-        padding: 2.1rem 0 !important; }
+        padding: 2.1rem 0 !important;
+        font-size: 1.1rem; }
         .navbar-nav .nav-link span {
           display: none; } }
 
@@ -8924,8 +8925,8 @@ h2, .h2, h3, .h3, h4, .h4 {
     align-items: center; }
   .navbar-nav {
     justify-content: center;
-    padding-right: 5%;
-    width: 72%;
+    padding-right: 3.5%;
+    width: 75%;
     max-width: 900px;
     background-color: rgba(70, 70, 70, 0.2);
     backdrop-filter: blur(10px);
@@ -8939,8 +8940,22 @@ h2, .h2, h3, .h3, h4, .h4 {
       width: var(--width);
       height: 2px;
       background-color: rgba(255, 255, 255, 0.25); }
-    .navbar-nav .nav-link span {
-      display: inline; } }
+    .navbar-nav .nav-link {
+      font-size: 1.2rem; }
+      .navbar-nav .nav-link span {
+        display: inline; } }
+
+@media (min-width: 1500px) {
+  .navbar .logo {
+    width: 56px;
+    height: 56px; }
+  .navbar-nav {
+    max-width: 1000px; }
+    .navbar-nav::after {
+      --width: 30%; }
+    .navbar-nav .nav-link {
+      font-size: 1.3rem;
+      letter-spacing: 4px; } }
 
 /* --- INPUT IN CHECKED ACTIVE DISPLAY FLEX ON HER SECTION --- */
 /* --- FIRST CHECKED --- */
@@ -9029,10 +9044,8 @@ h2, .h2, h3, .h3, h4, .h4 {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center; }
-  .description--about {
-    margin-bottom: 25px; }
   .description-span--crew {
-    font-size: 1rem;
+    font-size: 1.1rem;
     text-transform: uppercase;
     color: #ffffff;
     opacity: 50%;
@@ -9040,7 +9053,7 @@ h2, .h2, h3, .h3, h4, .h4 {
     font-family: "Bellefair", sans-serif; }
   .description-span--tech {
     font-family: "Barlow Condensed", sans-serif;
-    font-size: 14px;
+    font-size: 1rem;
     letter-spacing: 2.36px;
     text-transform: uppercase; }
   .description-title {
@@ -9048,48 +9061,40 @@ h2, .h2, h3, .h3, h4, .h4 {
     margin-top: 2.5rem;
     color: #ffffff; }
     .description-title--crew {
-      font-size: 1.5rem;
+      font-size: 2rem;
       text-transform: uppercase;
       margin-top: 0.3rem; }
     .description-title--tech {
       text-transform: uppercase;
-      font-size: 1.5rem;
+      font-size: 2rem;
       margin-top: 0.8rem; }
-    .description-title--about {
-      font-size: 3rem;
-      margin-top: 0; }
   .description-p {
     font-family: "Barlow", sans-serif;
-    font-size: 15px;
+    font-size: 0.9rem;
     text-align: center;
     line-height: 25px;
     margin: auto 3rem;
     min-width: 210px; }
     .description-p--tech {
       padding-bottom: 3rem; }
-    .description-p--about {
-      padding: 0 15%; }
   @media (min-width: 576px) {
     .description-span--crew {
-      font-size: 1.5rem; }
+      font-size: 1.43rem; }
     .description-span--tech {
-      font-size: 16px;
+      font-size: 1.2rem;
       letter-spacing: 2.7px; }
     .description-title {
       margin-top: 1.5rem;
-      font-size: 5rem;
+      font-size: 4.9rem;
       text-align: center; }
       .description-title--crew {
         margin-top: 5px;
-        font-size: 2.5rem; }
+        font-size: 2.4rem; }
       .description-title--tech {
-        font-size: 2.5rem;
+        font-size: 2.4rem;
         text-align: start; }
-      .description-title--about {
-        font-size: 3.5rem;
-        margin-top: 0; }
     .description-p {
-      font-size: 1rem;
+      font-size: 1.035rem;
       text-align: center;
       margin: auto 4.5rem;
       line-height: 28px; }
@@ -9101,13 +9106,8 @@ h2, .h2, h3, .h3, h4, .h4 {
     .description-title--tech {
       margin-top: 0; }
     .description-p {
-      margin: auto 25%; }
-      .description-p--about {
-        margin: auto 15%;
-        font-size: 1.1rem; } }
-  @media (min-width: 900px) {
-    .description-p--about {
-      font-size: 1.2rem; } }
+      font-size: 1.125rem;
+      margin: auto 25%; } }
   @media (min-width: 1200px) {
     .description {
       align-items: flex-start;
@@ -9124,38 +9124,43 @@ h2, .h2, h3, .h3, h4, .h4 {
         width: 500px;
         gap: 10px; }
       .description-span--crew {
-        font-size: 32px;
+        font-size: 1.54rem;
         margin: 0; }
+      .description-span--tech {
+        font-size: 1.54rem; }
       .description-cta {
         margin: -10px auto 20px 0; }
       .description-title {
-        font-size: 6.25rem;
+        font-size: 5.25rem;
         margin: 2rem 0 1.5rem; }
         .description-title--crew {
-          font-size: 54px;
+          font-size: 2.6rem;
           margin: 0; }
         .description-title--tech {
-          font-size: 52px;
+          font-size: 2.6rem;
           margin: 0; }
       .description-p {
-        font-size: 1.125rem;
+        font-size: 1.215rem;
         line-height: 32px;
         text-align: justify;
         margin: 0 1rem 0 0; }
         .description-p--crew {
-          font-size: 1.125rem;
           line-height: 32px;
           text-align: justify;
           margin: 0 1rem 0 0; }
         .description-p--tech {
-          font-size: 18px;
           line-height: 32px; } }
+  @media (min-width: 1500px) {
+    .description-p {
+      font-size: 1.305rem; }
+      .description-p--crew {
+        padding-right: 12rem; } }
 
 /* General styles, titles, subtitles and details of all pages */
 /* Styles of first heading present in every page, who guides to users in the site */
 .step-name {
   font-family: "Barlow Condensed";
-  font-size: 1rem;
+  font-size: 1.3rem;
   letter-spacing: 2.7px;
   text-transform: uppercase;
   text-align: center;
@@ -9166,22 +9171,24 @@ h2, .h2, h3, .h3, h4, .h4 {
   .step-name--tech {
     margin-bottom: 2rem; }
   .step-name-arrow--right {
-    margin-left: 10%;
-    transition: .2s; }
-    .step-name-arrow--right:hover {
-      fill: rgba(177, 177, 177, 0.9); }
+    margin-left: 3%; }
+    @media (max-width: 330px) {
+      .step-name-arrow--right {
+        display: none; } }
   .step-name-arrow--left {
-    margin-right: 10%;
-    transition: .2s; }
-    .step-name-arrow--left img {
-      color: white; }
-      .step-name-arrow--left img:hover {
-        fill: rgba(177, 177, 177, 0.9); }
+    margin-right: 3%; }
+    @media (max-width: 330px) {
+      .step-name-arrow--left {
+        display: none; } }
   @media (min-width: 576px) {
     .step-name {
       letter-spacing: 3.5px;
       text-align: center;
-      padding-left: 40px; } }
+      padding-left: 40px; }
+      .step-name-arrow--right {
+        margin-left: 10%; }
+      .step-name-arrow--left {
+        margin-right: 10%; } }
   @media (min-width: 768px) {
     .step-name {
       text-align: start; }
@@ -9189,7 +9196,7 @@ h2, .h2, h3, .h3, h4, .h4 {
         display: none; } }
   @media (min-width: 1200px) {
     .step-name {
-      font-size: 1.75rem;
+      font-size: 1.82rem;
       letter-spacing: 4.72px;
       padding-left: 10rem;
       margin: 5rem 0 4rem; }
@@ -9198,6 +9205,7 @@ h2, .h2, h3, .h3, h4, .h4 {
       .step-name--tech {
         margin-bottom: 1px; } }
 
+/* ---- */
 /* Home styles */
 .title__container {
   display: flex;
@@ -9208,25 +9216,46 @@ h2, .h2, h3, .h3, h4, .h4 {
   width: 75%; }
   .title__container-sup {
     font-family: "Barlow Condensed";
-    font-size: 1rem;
+    font-size: 1.3rem;
     letter-spacing: 2.7px;
     text-transform: uppercase;
     text-align: center; }
+  .title__container-title {
+    font-size: 5rem; }
   .title__container-p {
-    font-size: 15px;
+    font-size: 0.9rem;
     font-family: "Barlow";
     text-align: center; }
   @media (min-width: 576px) {
     .title__container-sup {
-      font-size: 1.25rem;
+      font-size: 1.625rem;
       letter-spacing: 3.38px; }
     .title__container-title {
-      font-size: 9.375rem; }
+      font-size: 9.5rem; }
     .title__container-p {
-      font-size: 1rem;
+      font-size: 1.035rem;
       line-height: 28px;
       margin: auto 15%; } }
+  @media (min-width: 1200px) {
+    .title__container-sup {
+      font-size: 1.82rem; }
+    .title__container-title {
+      font-size: 10.5rem; }
+    .title__container-p {
+      font-size: 1.215rem; } }
+  @media (min-width: 1500px) {
+    .title__container {
+      padding-top: 1rem; }
+      .title__container-sup {
+        font-size: 2.08rem;
+        letter-spacing: 3.38px; }
+      .title__container-title {
+        font-size: 12rem; }
+      .title__container-p {
+        font-size: 1.305rem;
+        margin: auto 19%; } }
 
+/* ---- */
 /* Destination styles */
 .main--destination {
   position: relative; }
@@ -9266,7 +9295,7 @@ h2, .h2, h3, .h3, h4, .h4 {
   text-align: center; }
   .features-title {
     font-family: "Barlow Condensed", sans-serif;
-    font-size: 14px;
+    font-size: 0.9rem;
     letter-spacing: 2.36px;
     text-transform: uppercase; }
   .features-data {
@@ -9277,15 +9306,20 @@ h2, .h2, h3, .h3, h4, .h4 {
     color: #ffffff; }
   @media (min-width: 576px) {
     .features {
-      justify-content: space-evenly; } }
+      justify-content: space-evenly; }
+      .features-title {
+        font-size: 0.99rem; } }
   @media (min-width: 1200px) {
     .features {
       justify-content: flex-start;
       gap: 5rem;
       text-align: start; }
+      .features-title {
+        font-size: 1.17rem; }
       .features-data {
         font-size: 1.75rem; } }
 
+/* ---- */
 /* Crew styles */
 .main--crew {
   position: relative; }
@@ -9343,8 +9377,12 @@ h2, .h2, h3, .h3, h4, .h4 {
       margin-top: -5rem;
       width: 100%;
       height: 482px; } }
+  @media (min-width: 1500px) {
+    .photo__container {
+      height: 550px; } }
 
-/* TECH STYLES */
+/* ---- */
+/* Tech styles */
 .tech__section {
   display: flex;
   flex-direction: column;
@@ -9375,7 +9413,8 @@ h2, .h2, h3, .h3, h4, .h4 {
     padding-right: 15px;
     margin-top: 0; } }
 
-/* CONTACT */
+/* ---- */
+/* Contact styles */
 .main--contact {
   padding: 1rem 4rem;
   display: flex;
@@ -9401,9 +9440,27 @@ h2, .h2, h3, .h3, h4, .h4 {
     font-family: "Barlow Condensed";
     text-transform: uppercase;
     font-size: 2rem; }
+    @media (min-width: 768px) {
+      .form__title, .contact__title {
+        font-size: 2.5rem; } }
+    @media (min-width: 1200px) {
+      .form__title, .contact__title {
+        font-size: 2.6rem; } }
+    @media (min-width: 1500px) {
+      .form__title, .contact__title {
+        font-size: 2.8rem; } }
   .form__subtitle {
     text-transform: uppercase;
-    font-size: 1rem; }
+    font-size: 0.9rem; }
+    @media (min-width: 768px) {
+      .form__subtitle {
+        font-size: 1.08rem; } }
+    @media (min-width: 1200px) {
+      .form__subtitle {
+        font-size: 1.17rem; } }
+    @media (min-width: 1500px) {
+      .form__subtitle {
+        font-size: 1.26rem; } }
   .form__container {
     display: grid;
     grid-template: "input-1" 48px "input-2" 48px "text-area" 96px "submit" 48px / 1fr;
@@ -9412,6 +9469,9 @@ h2, .h2, h3, .h3, h4, .h4 {
     @media screen and (min-width: 768px) and (max-width: 900px) {
       .form__container {
         grid-template: "input-1 submit" 48px "input-2 submit" 48px "text-area submit" 96px / 3fr 1fr; } }
+    @media (min-width: 1500px) {
+      .form__container {
+        gap: 1.8rem; } }
   .form__input {
     width: 100%;
     min-height: 3rem;
@@ -9434,6 +9494,17 @@ h2, .h2, h3, .h3, h4, .h4 {
       border-color: rgba(242, 242, 242, 0.7); }
     .form__input::placeholder {
       color: rgba(242, 242, 242, 0.9); }
+    @media (min-width: 768px) {
+      .form__input {
+        font-size: 1.15rem; } }
+    @media (min-width: 1200px) {
+      .form__input {
+        font-size: 1.2rem;
+        min-height: 3.5rem; } }
+    @media (min-width: 1500px) {
+      .form__input {
+        font-size: 1.3rem;
+        min-height: 4rem; } }
   .form__cta {
     grid-area: submit;
     align-self: start;
@@ -9461,6 +9532,9 @@ h2, .h2, h3, .h3, h4, .h4 {
         height: 35%;
         justify-self: flex-end;
         align-self: center; } }
+    @media (min-width: 900px) {
+      .form__cta {
+        padding: 1rem; } }
 
 .rocket__container {
   grid-area: vector;
@@ -9476,6 +9550,10 @@ h2, .h2, h3, .h3, h4, .h4 {
         display: block;
         width: 90%;
         height: 90%; } }
+    @media (min-width: 1500px) {
+      .rocket__container-img {
+        width: 100%;
+        height: 100%; } }
 
 @keyframes flighting {
   from {
@@ -9484,7 +9562,7 @@ h2, .h2, h3, .h3, h4, .h4 {
 .contact {
   grid-area: map;
   color: #ffffff;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-family: "Bellefair"; }
   @media (min-width: 900px) {
     .contact {
@@ -9492,6 +9570,12 @@ h2, .h2, h3, .h3, h4, .h4 {
       flex-direction: column;
       justify-content: center;
       align-items: center; } }
+  @media (min-width: 1200px) {
+    .contact {
+      font-size: 1.5rem; } }
+  @media (min-width: 1500px) {
+    .contact {
+      font-size: 1.8rem; } }
   .contact__frame {
     width: 400px;
     height: 300px;
@@ -9529,3 +9613,8 @@ h2, .h2, h3, .h3, h4, .h4 {
     transition: 0.2s; }
     .footer__anchor:hover {
       color: #666; }
+  @media (min-width: 1500px) {
+    .footer {
+      min-height: 8rem; }
+      .footer__anchor {
+        font-size: 5rem; } }

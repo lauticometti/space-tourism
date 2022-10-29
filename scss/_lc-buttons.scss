@@ -6,7 +6,7 @@
   min-height: 220px;
   position: relative;
   &-btn {
-    font-family: "Bellefair";
+    font-family: $font-1;
     font-size: 20px;
     text-transform: uppercase;
     letter-spacing: 1.25px;
@@ -307,7 +307,7 @@
       @include absolute(50%, 50%);
       transform: translate(-50%, -50%);
       font: {
-        family: $font-main;
+        family: $font-1;
         size: 14px;
       }
       @include media(desktop-up) {

@@ -2,51 +2,44 @@
 
 .description {
   @include flex-col($align: center);
-  // color: $white;
-
-  &--about {
-    margin-bottom: 25px;
-  }
 
   &-span {
     &--crew {
-      font-size: 1rem;
+      font-size: $h4-size;
       text-transform: uppercase;
       color: $white;
       opacity: 50%;
       margin-top: 3rem;
-      font-family: "Bellefair", sans-serif;
+      font-family: $font-1, sans-serif;
     }
     &--tech {
-      font-family: "Barlow Condensed", sans-serif;
-      font-size: 14px;
+      font-family: $font-3, sans-serif;
+      font-size: $span-size;
       letter-spacing: 2.36px;
       text-transform: uppercase;
     }
   }
 
   &-title {
-    font-size: 3.5rem;
+    font-size: $destiny-title-size;
     margin-top: 2.5rem;
     color: $white;
     &--crew {
-      font-size: 1.5rem;
+      font-size: $h2-size;
       text-transform: uppercase;
       margin-top: 0.3rem;
     }
     &--tech {
       text-transform: uppercase;
-      font-size: 1.5rem;
+      font-size: $h2-size;
       margin-top: 0.8rem;
     }
-    &--about {
-      font-size: 3rem;
-      margin-top: 0;
-    }
+
   }
+
   &-p {
-    font-family: "Barlow", sans-serif;
-    font-size: 15px;
+    font-family: $font-2, sans-serif;
+    font-size: $paragraph-size;
     text-align: center;
     line-height: 25px;
     margin: auto 3rem;
@@ -54,40 +47,33 @@
     &--tech {
       padding-bottom: 3rem;
     }
-    &--about {
-      padding: 0 15%;
-    }
   }
 
   @include media(big-phone-up) {
     &-span {
       &--crew {
-        font-size: 1.5rem;
+        font-size: $h4-size-sm;
       }
       &--tech {
-        font-size: 16px;
+        font-size: $span-size-sm;
         letter-spacing: 2.7px;
       }
     }
     &-title {
       margin-top: 1.5rem;
-      font-size: 5rem;
+      font-size: $destiny-title-size-sm;
       text-align: center;
       &--crew {
         margin-top: 5px;
-        font-size: 2.5rem;
+        font-size: $h2-size-sm;
       }
       &--tech {
-        font-size: 2.5rem;
+        font-size: $h2-size-sm;
         text-align: start;
-      }
-      &--about {
-        font-size: 3.5rem;
-        margin-top: 0;
       }
     }
     &-p {
-      font-size: 1rem;
+      font-size: $paragraph-size-sm;
       text-align: center;
       margin: auto 4.5rem;
       line-height: 28px;
@@ -96,7 +82,6 @@
       }
     }
   }
-
   @include media(tablet-up) {
     &-span {
       &--tech {
@@ -109,19 +94,8 @@
       }
     }
     &-p {
+      font-size: $paragraph-size-md;
       margin: auto 25%;
-      &--about {
-        margin: auto 15%;
-        font-size: 1.1rem;
-      }
-    }
-  }
-
-  @include media(big-tablet-up) {
-    &-p {
-      &--about {
-        font-size: 1.2rem;
-      }
     }
   }
 
@@ -147,8 +121,11 @@
 
     &-span {
       &--crew {
-        font-size: 32px;
+        font-size: $h4-size-xl;
         margin: 0;
+      }
+      &--tech {
+        font-size: $h4-size-xl;
       }
     }
 
@@ -157,31 +134,39 @@
     }
 
     &-title {
-      font-size: 6.25rem;
+      font-size: $destiny-title-size-xl;
       margin: 2rem 0 1.5rem;
       &--crew {
-        font-size: 54px;
+        font-size: $h2-size-xl;
         margin: 0;
       }
       &--tech {
-        font-size: 52px;
+        font-size: $h2-size-xl;
         margin: 0;
       }
     }
     &-p {
-      font-size: 1.125rem;
+      font-size: $paragraph-size-xl;
       line-height: 32px;
       text-align: justify;
       margin: 0 1rem 0 0;
       &--crew {
-        font-size: 1.125rem;
         line-height: 32px;
         text-align: justify;
         margin: 0 1rem 0 0;
       }
       &--tech {
-        font-size: 18px;
         line-height: 32px;
+      }
+    }
+  }
+
+  @include media(big-desktop-up) {
+    
+    &-p {
+      font-size: $paragraph-size-xxl;
+      &--crew {
+        padding-right: 12rem;
       }
     }
   }

@@ -2,9 +2,84 @@
 $main: #0b0d17;
 $alt: #d0d6f9;
 $white: #ffffff;
-$template-glass-1: rgba(70, 70, 70, 0.2);
 $white-05: rgba(255, 255, 255, 0.5);
+$template-glass-1: rgba(70, 70, 70, 0.2);
+
+// Fonts
 
 // Typographys
-$font-main: "Bellefair";
-$font-second: "Barlow";
+$bellefair: "Bellefair";
+$barlow: "Barlow";
+$barlow-condensed: "Barlow Condensed";
+
+$font-1: $bellefair;
+$font-2: $barlow;
+$font-3: $barlow-condensed;
+
+$font-size-base: 1rem;
+
+//Titles  
+
+$main-title-size: 5rem;
+$main-title-size-sm: $main-title-size * 1.9;
+$main-title-size-xl: $main-title-size * 2.1;
+$main-title-size-xxl: $main-title-size * 2.4;
+
+$destiny-title-size: 3.5rem;
+$destiny-title-size-sm: $destiny-title-size * 1.4;
+$destiny-title-size-xl: $destiny-title-size * 1.5;
+$destiny-title-size-xxl: $destiny-title-size * 1.6;
+
+$h2-size: 2rem;
+$h2-size-sm: $h2-size * 1.2;
+$h2-size-md: $h2-size * 1.25;
+$h2-size-xl: $h2-size * 1.3;
+$h2-size-xxl: $h2-size * 1.4;
+
+$h3-size: 1.3rem;
+$h3-size-sm: $h3-size * 1.25;
+$h3-size-md: $h3-size * 1.3;
+$h3-size-xl: $h3-size * 1.4;
+$h3-size-xxl: $h3-size * 1.6;
+
+$h4-size: 1.1rem;
+$h4-size-sm: $h4-size * 1.3;
+$h4-size-xl: $h4-size * 1.4;
+$h4-size-xxl: $h4-size * 1.5;
+
+$h5-size: .9rem;
+$h5-size-sm: $h5-size * 1.1;
+$h5-size-md: $h5-size * 1.2;
+$h5-size-xl: $h5-size * 1.3;
+$h5-size-xxl: $h5-size * 1.4;
+
+
+// Texts
+
+// Span
+$span-size: 1rem;
+$span-size-sm: $span-size * 1.2;
+$span-size-md: $span-size * 1.3;
+$span-size-xl: $span-size * 1.4;
+$span-size-xxl: $span-size * 1.5;
+
+//Paragraph
+$paragraph-size: .9rem;
+$paragraph-size-sm: $paragraph-size * 1.15;
+$paragraph-size-md: $paragraph-size * 1.25;
+$paragraph-size-xl: $paragraph-size * 1.35;
+$paragraph-size-xxl: $paragraph-size * 1.45;
+
+//Nav-link
+$nav-link-size: 1rem;
+$nav-link-size-sm: $nav-link-size * 1.1;
+$nav-link-size-md: $nav-link-size * 1.15;
+$nav-link-size-xl: $nav-link-size * 1.2;
+$nav-link-size-xxl: $nav-link-size * 1.3;
+
+//Input
+$input-text-size: 1rem;
+$input-text-size-sm: $input-text-size * 1.1;
+$input-text-size-md: $input-text-size * 1.15;
+$input-text-size-xl: $input-text-size * 1.2;
+$input-text-size-xxl: $input-text-size * 1.3;

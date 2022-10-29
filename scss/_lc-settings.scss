@@ -6,7 +6,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  font-family: "Barlow", sans-serif;
+  font-family: $font-2, sans-serif;
   color: $alt;
   max-width: 1400px;
   margin: auto;
@@ -91,7 +91,7 @@ a {
 }
 
 h1 {
-  font-family: "Bellefair", sans-serif;
+  font-family: $font-1, sans-serif;
   font-size: 5rem;
   padding: 10px;
   text-transform: uppercase;
@@ -101,5 +101,5 @@ h1 {
 h2,
 h3,
 h4 {
-  font-family: "Bellefair", sans-serif;
+  font-family: $font-1, sans-serif;
 }

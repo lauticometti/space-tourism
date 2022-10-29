@@ -1,8 +1,8 @@
 /* Navbar module just gives styles to navbar (?  */
 
 .navbar {
-  font-family: "Barlow Condensed", sans-serif;
-  font-size: 16px;
+  font-family: $font-3, sans-serif;
+  font-size: $nav-link-size;
   letter-spacing: 2.7px;
   text-transform: uppercase;
   margin-bottom: 1.5rem;
@@ -102,7 +102,7 @@
         display: block;
         width: 100%;
         padding: 2.1rem 0 !important;
-
+        font-size: $nav-link-size-sm;
         span {
           display: none;
         }
@@ -111,7 +111,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@include media(desktop-up) {
   .navbar {
     .container-fluid {
       margin-top: 1.8rem;
@@ -120,8 +120,8 @@
     }
     &-nav {
       justify-content: center;
-      padding-right: 5%;
-      width: 72%;
+      padding-right: 3.5%;
+      width: 75%;
       max-width: 900px;
       background-color: $template-glass-1;
       backdrop-filter: blur(10px);
@@ -138,10 +138,30 @@
         background-color: rgba(255, 255, 255, 0.25);
       }
       .nav-link {
+        font-size: $nav-link-size-xl;
         span {
           display: inline;
         }
       }
+    }
+  }
+}
+
+@include media(big-desktop-up) {
+  .navbar {
+    .logo {
+      width: 56px;
+      height: 56px;
+    }
+    &-nav {
+      max-width: 1000px;
+      &::after {
+        --width: 30%;
+      }
+     .nav-link {
+      font-size: $nav-link-size-xxl;
+      letter-spacing: 4px;
+     }
     }
   }
 }
