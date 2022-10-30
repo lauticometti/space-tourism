@@ -10,9 +10,9 @@
 
 @import "https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap";
 
-@import "lc-settings";
-@import "lc-buttons";
-@import "lc-navbar";
-@import "lc-sliders";
-@import "lc-description";
-@import "lc-general";
+@import "lc-settings"; //The settings module is in charge of establishing common styles in all the pages
+@import "lc-buttons"; // Various buttons used in the site
+@import "lc-navbar"; // Navbar styles
+@import "lc-sliders"; // Sliders functionality 
+@import "lc-description"; // Content in page'center of each page. It's, span, title and paragraph.
+@import "lc-general"; // General styles, titles, subtitles and details of all pages

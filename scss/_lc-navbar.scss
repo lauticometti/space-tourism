@@ -1,5 +1,3 @@
-/* Navbar module just gives styles to navbar (?  */
-
 .navbar {
   font-family: $font-3, sans-serif;
   font-size: $nav-link-size;
@@ -21,7 +19,7 @@
   .offcanvas {
     background-color: rgba(105, 105, 105, 0.1);
     backdrop-filter: blur(80px);
-    width: 55% !important;
+    width: 55%; 
     &-header {
       margin: 0.5rem;
       .close-btn {
@@ -31,12 +29,12 @@
       }
     }
     &-backdrop {
-      background-color: transparent;
+      background-color: transparent; //Remove the low opacity filter of the page when offcanvas is open 
     }
   }
 }
 
-/* Animation for logo */
+// Animation for logo
 @keyframes rotating {
   0% {
     transform: rotate(0deg) translate(5px) rotate(0deg);
@@ -56,7 +54,7 @@
   color: $alt;
   width: fit-content;
 
-  border-bottom: 1px solid rgba($color: $white, $alpha: 0); //border alpha 0 for turn into alpha 0.5 in hover
+  border-bottom: 1px solid rgba($color: $white, $alpha: 0); //Border declared with alpha 0. If, otherwise, on hover is make the border, this would push the content to up 
   &:hover {
     color: $white;
     border-bottom: 1px solid rgba($color: $white, $alpha: 0.5);
@@ -101,7 +99,7 @@
       .nav-link {
         display: block;
         width: 100%;
-        padding: 2.1rem 0 !important;
+        padding: 2.1rem 0 !important; //Important is required because of Bootstrap 
         font-size: $nav-link-size-sm;
         span {
           display: none;
@@ -126,7 +124,7 @@
       background-color: $template-glass-1;
       backdrop-filter: blur(10px);
 
-      /* After creates a line in the navbar */
+      /* After pseudo-element creates a line in the navbar */
       &::after {
         --width: 35%;
         content: "";

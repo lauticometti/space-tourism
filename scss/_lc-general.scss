@@ -1,7 +1,5 @@
-/* General styles, titles, subtitles and details of all pages */
-
-/* Styles of first heading present in every page, who guides to users in the site */
 .step-name {
+  //Styles of first heading present in every page, who guides to users in the site 
   font-family: $font-3;
   font-size: $h3-size;
   letter-spacing: 2.7px;
@@ -135,7 +133,7 @@
 /* Destination styles */
 
 .main--destination {
-  position: relative;
+  position: relative; //Position relative help to the buttons of slider to be positionated
 }
 
 .planet__container {
@@ -215,7 +213,7 @@
 /* Crew styles */
 
 .main--crew {
-  position: relative;
+  position: relative; //Position relative help to the buttons of slider to be positionated
 }
 
 .step-name--crew {
@@ -250,7 +248,7 @@
     object-fit: contain;
     @include size(100%, 100%);
   }
-  /* After creates a line under photo__container */
+  /* After pseudo-element creates a line under photo__container */
   &::after {
     content: "";
     position: absolute;
@@ -276,7 +274,6 @@
     height: 550px;
   }
 }
-
 
 /* ---- */
 
@@ -419,7 +416,7 @@
     }
 
     &:focus {
-      outline: none;
+      outline: none; //Remove default outline styles from inputs
       border-color: rgba($color: #f2f2f2, $alpha: 0.7);
     }
     &::placeholder {
@@ -462,7 +459,7 @@
       color: rgba($color: #fff, $alpha: 1);
     }
     &:focus {
-      outline: none;
+      outline: none; //Remove default outline styles from inputs
       border-color: rgba($color: #121212, $alpha: 0.7);
     }
     @include media-minmax(768px, 900px) {

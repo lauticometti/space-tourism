@@ -1,14 +1,13 @@
-/* The settings module is in charge of establishing common styles in all the pages */
-
 /* Backgrounds */
 .body {
+  //Define backgrounds on each page
   background-color: $main;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   font-family: $font-2, sans-serif;
   color: $alt;
-  max-width: 1400px;
+  max-width: 1400px; //Avoid problems with very large screens
   margin: auto;
   @include media(big-phone-up) {
     background-position: center;
@@ -78,7 +77,6 @@
 
 .container-fluid {
   padding-right: 0;
-  color: #f6d965;
 }
 
 .row {

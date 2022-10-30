@@ -8388,7 +8388,6 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important; } }
 
-/* The settings module is in charge of establishing common styles in all the pages */
 /* Backgrounds */
 .body {
   background-color: #0b0d17;
@@ -8459,8 +8458,7 @@ textarea.form-control-lg {
 .container-lg,
 .container-xl,
 .container-xxl {
-  padding-right: 0;
-  color: #f6d965; }
+  padding-right: 0; }
 
 .row {
   margin: 0; }
@@ -8834,7 +8832,6 @@ h2, .h2, h3, .h3, h4, .h4 {
       color: #fff;
       background: linear-gradient(145deg, #090a11, #0c0d18); }
 
-/* Navbar module just gives styles to navbar (?  */
 .navbar {
   font-family: "Barlow Condensed", sans-serif;
   font-size: 1rem;
@@ -8854,7 +8851,7 @@ h2, .h2, h3, .h3, h4, .h4 {
   .navbar .offcanvas {
     background-color: rgba(105, 105, 105, 0.1);
     backdrop-filter: blur(80px);
-    width: 55% !important; }
+    width: 55%; }
     .navbar .offcanvas-header {
       margin: 0.5rem; }
       .navbar .offcanvas-header .close-btn {
@@ -8864,7 +8861,6 @@ h2, .h2, h3, .h3, h4, .h4 {
     .navbar .offcanvas-backdrop {
       background-color: transparent; }
 
-/* Animation for logo */
 @keyframes rotating {
   0% {
     transform: rotate(0deg) translate(5px) rotate(0deg); }
@@ -8930,7 +8926,7 @@ h2, .h2, h3, .h3, h4, .h4 {
     max-width: 900px;
     background-color: rgba(70, 70, 70, 0.2);
     backdrop-filter: blur(10px);
-    /* After creates a line in the navbar */ }
+    /* After pseudo-element creates a line in the navbar */ }
     .navbar-nav::after {
       --width: 35%;
       content: "";
@@ -8957,7 +8953,6 @@ h2, .h2, h3, .h3, h4, .h4 {
       font-size: 1.3rem;
       letter-spacing: 4px; } }
 
-/* --- INPUT IN CHECKED ACTIVE DISPLAY FLEX ON HER SECTION --- */
 /* --- FIRST CHECKED --- */
 .oval.sb-1:checked ~ #crew-1,
 .rect--1:checked ~ #destination-1,
@@ -9038,7 +9033,6 @@ h2, .h2, h3, .h3, h4, .h4 {
 .rect--4:checked ~ #destination-4 {
   display: flex; }
 
-/* description module just gives styles to the descriptions (center text) of each page. */
 .description {
   display: flex;
   flex-direction: column;
@@ -9156,8 +9150,6 @@ h2, .h2, h3, .h3, h4, .h4 {
       .description-p--crew {
         padding-right: 12rem; } }
 
-/* General styles, titles, subtitles and details of all pages */
-/* Styles of first heading present in every page, who guides to users in the site */
 .step-name {
   font-family: "Barlow Condensed";
   font-size: 1.3rem;
@@ -9352,7 +9344,7 @@ h2, .h2, h3, .h3, h4, .h4 {
   width: 327px;
   height: 223px;
   margin: 8px auto 0;
-  /* After creates a line under photo__container */ }
+  /* After pseudo-element creates a line under photo__container */ }
   .photo__container-img {
     object-fit: contain;
     width: 100%;

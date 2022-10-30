@@ -1,7 +1,7 @@
-// BIG CENTER BUTTON WITH BIG BORDER-SHADOW AT HOVER
+// Home page rounded button "EXPLORE". With shadow around hover effect. 
 
 .explore__container {
-  @include flex-row(center, center);
+  @include flex-row(center, center);  //Center circle in the page
 
   min-height: 220px;
   position: relative;
@@ -11,17 +11,17 @@
     text-transform: uppercase;
     letter-spacing: 1.25px;
 
-    @include flex-row(center, center);
+    @include flex-row(center, center); //Center text in circle
     width: 150px;
     height: 150px;
 
     background-color: $white;
     border: none;
     border-radius: 50%;
-    outline: 0px solid #4d4d4dcc;
+    outline: 0px solid #4d4d4dcc; //Outline defined but without size
     transition: all 0.2s;
     &:hover {
-      outline-width: 50px;
+      outline-width: 50px; //On hover, outline get shape
       transition: outline 0.2s;
     }
   }
@@ -44,11 +44,11 @@
 
 // XXXXXXXX
 
-//IMPUTS OVAL BUTTONS, POSITIONED IN MIDDLE OF HER CONTAINER
+//Crew page rounded slider buttons.
 
 .oval {
-  @include reset-radio();
-  @include absolute(50%, 50%, $white);
+  @include reset-radio(); //Radio inputs are being used for slider effect. So, we reset his default style.
+  @include absolute(50%, 50%, $white); //Place the buttons in the center of the screen.
   @include size(18px, 18px);
   border-radius: 50%;
   opacity: 20%;
@@ -60,6 +60,7 @@
   }
 }
 
+  //Place each button in his position
 .oval {
   &.sb-1 {
     transform: translate(-330%, 20px);
@@ -74,6 +75,8 @@
     transform: translate(270%, 20px);
   }
 }
+
+  //Media queries are used to change the position of buttons as the screen increases in size
 
 @include media(big-phone-up) {
   .oval {
@@ -107,6 +110,7 @@
   }
 }
 
+//small arrows on the sides to help the user to interact with the slider
 @include media-minmax(1000px, 1200px) {
   .oval {
     &.sb-1::after {
@@ -131,6 +135,7 @@
     }
   }
 
+  //Animations for the arrows of above
   @keyframes inOut {
     0% {
       transform: translate(0px, -32px);
@@ -180,23 +185,25 @@
 
 // XXXXXXXX
 
-//IMPUTS RECTANGLES BUTTONS WITH NAME
+//Buttons used in destination pages for the slider
 
 .rectangle-btn {
-  @include reset-radio();
-  @include absolute(14.5rem, 48%);
+  @include reset-radio(); //Radio inputs are being used for slider effect. So, we reset his default style.
+  @include absolute(14.5rem, 48%); //Place the buttons in the center of the screen.
   @include size(2.8rem, 0.25rem);
   background-color: rgba($color: $white, $alpha: 0);
   border-radius: 2px;
   transition: 0.2s;
   color: $alt;
   &:checked {
-    background-color: rgba($color: $white, $alpha: 1);
+    background-color: rgba($color: $white, $alpha: 1); //Paint the button corresponding to the current page
     color: $white;
   }
   &:hover {
-    background-color: rgba($color: $white, $alpha: 0.5);
+    background-color: rgba($color: $white, $alpha: 0.5); //Paint the button on hover  
   }
+
+  //Media queries are used to change the position of buttons as the screen increases in size
   @include media(big-phone-up) {
     top: 24rem;
     @include size(3.2rem, 0.3rem);
@@ -211,6 +218,7 @@
   }
 }
 
+// After pseudo-elements are used for the name of the buttons
 .rectangle-btn {
   &.rect--1 {
     transform: translate(-330%, 20px);
@@ -269,11 +277,11 @@
 
 // XXXXXXXX
 
-//ROUNDED GHOST BUTTONS, WITH NUMBERS
+//Buttons of technology pages, rounded with numbers inside.
 
 .rounded-ghost-btn {
-  @include reset-radio(rgba($color: $white, $alpha: 0));
-  @include absolute(21.5rem, 50%);
+  @include reset-radio(rgba($color: $white, $alpha: 0)); //Radio inputs are being used for slider effect. So, we reset his default style.
+  @include absolute(21.5rem, 50%); //Place the buttons in the center of the screen.
   @include size(40px, 40px);
   transition: 0.2s;
   border: 1px solid rgba($color: $white, $alpha: 0.5) {
@@ -287,6 +295,8 @@
     background-color: rgba($color: $white, $alpha: 1);
     color: $main;
   }
+
+  //Media queries are used to change the position of buttons as the screen increases in size
   @include media(420px) {
     top: 25rem;
   }
@@ -300,6 +310,7 @@
     top: 25rem;
   }
 
+  // After pseudo-elements are used to place the number inside the circle. Each circle sets its own position with media-queries in its selectors.
   &.tb--1 {
     transform: translate(-230%);
     &::after {
@@ -379,7 +390,7 @@
 
 // XXXXXXXX
 
-//RECT GLASSMORPHISM BUTTONS WITH TEXT
+//CTA button used in destination page, below the title.
 
 .description-cta {
   @include flex-row(center, center);
