@@ -54,6 +54,7 @@
   opacity: 20%;
   &:hover {
     opacity: 60%;
+    cursor: pointer;
   }
   &:checked {
     opacity: 100%;
@@ -193,8 +194,9 @@
   @include size(2.8rem, 0.25rem);
   background-color: rgba($color: $white, $alpha: 0);
   border-radius: 2px;
-  transition: 0.2s;
   color: $alt;
+  cursor: pointer;
+  transition: 0.2s;
   &:checked {
     background-color: rgba($color: $white, $alpha: 1); //Paint the button corresponding to the current page
     color: $white;
@@ -287,6 +289,7 @@
   border: 1px solid rgba($color: $white, $alpha: 0.5) {
     radius: 50%;
   }
+  cursor: pointer;
   color: $white;
   &:hover {
     border-color: rgba($color: $white, $alpha: 1);

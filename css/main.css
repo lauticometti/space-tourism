@@ -8529,7 +8529,8 @@ h2, .h2, h3, .h3, h4, .h4 {
   border-radius: 50%;
   opacity: 20%; }
   .oval:hover {
-    opacity: 60%; }
+    opacity: 60%;
+    cursor: pointer; }
   .oval:checked {
     opacity: 100%; }
 
@@ -8633,8 +8634,9 @@ h2, .h2, h3, .h3, h4, .h4 {
   height: 0.25rem;
   background-color: rgba(255, 255, 255, 0);
   border-radius: 2px;
-  transition: 0.2s;
-  color: #d0d6f9; }
+  color: #d0d6f9;
+  cursor: pointer;
+  transition: 0.2s; }
   .rectangle-btn:checked {
     background-color: white;
     color: #ffffff; }
@@ -8711,6 +8713,7 @@ h2, .h2, h3, .h3, h4, .h4 {
   transition: 0.2s;
   border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 50%;
+  cursor: pointer;
   color: #ffffff; }
   .rounded-ghost-btn:hover {
     border-color: white; }
