@@ -4,7 +4,7 @@ I coded this web to get the certificate of a Coderhouse' course about web develo
 The original design is from frontendmentor.com, an amazing site with a lot of challenges to get experience with web technologies:
   They provide to you of a idea and you should get a solution. At the case of Space Tourism (and for all pay accounts) you get a Figma design.
 
-For this project, I use three main techs:
+For this project, I use three main technologies:
 - HTML5
 - CSS3
 - SCSS
